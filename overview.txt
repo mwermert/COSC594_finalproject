@@ -1,0 +1,8 @@
+Rough Overview of Project:
+1. Input guide RNA (gRNA) csv, reference fasta and query fasta(s?)
+2. Determine nature of query (reads, large genome, small genome)
+3. Run BinDash and/or Mash to extract distances
+4. Filter out distances above threshold value
+	* How to choose threshold value?
+5. Run off-target analysis for all selected gRNAs ONLY on sequences with distance scores below threshold
+6. Plot results on interactive graph (plotly?)
