@@ -6,3 +6,15 @@ Rough Overview of Project:
 	* How to choose threshold value?
 5. Run off-target analysis for all selected gRNAs ONLY on sequences with distance scores below threshold
 6. Plot results on interactive graph (plotly?)
+
+
+
+OT executable command format:
+"path to exe" "path to gRNAs (see format below)" "path to reference cspr" "path to reference repeats" "path to output" "path to CASPERinfo" <# mismatches> <tolerance value (0-1)> <avg_bool> <opposite of avg_bool>
+
+loc;seq;pam;score;strand
+2737873;GATCAGATGTCTTTATGGGC;AGG;37;+
+2738378;TAAAAAATGTAATCTTCATA;AGG;37;-
+
+Example:
+"/Applications/CASPERapp.app/Contents/MacOS/OffTargetFolder/OT" "/Applications/CASPERapp.app/Contents/MacOS/OffTargetFolder/temp.txt" "/Users/ddooley/casperdb/sao_spCas9.cspr" "/Users/ddooley/casperdb/sao_spCas9_repeats.db" "/Users/ddooley/casperdb/_OffTargetResults.txt" "/Applications/CASPERapp.app/Contents/MacOS/CASPERinfo" 1 0.0 TRUE FALSE
