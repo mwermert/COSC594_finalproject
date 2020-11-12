@@ -1,0 +1,9 @@
+To-Do List: 11/12/2020
+
+David = make outline of GUI and start working on Gantt chart for project
+
+Chris = become familiar with running BinDash/Mash/Dashing and the appropriate settings for different query types (reads, entire genomes, contigs/scaffolds, etc.)
+
+McKensie = work on importing gRNA data (w/o off-target) and then incorporating off-target data for each guide
+
+Michael = start plotting data using matplotlib or plotly (distance vs. off-target score, see example graphs). Start with plotting all off-target hits for a single gRNA and then try doing it for several

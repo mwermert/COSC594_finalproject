@@ -1,0 +1,504 @@
+Sequence,Off-Target Score,Off-Target Organism,Organism Distance,Gene Name,gRNA Location,PAM,Strand,On-Target Score
+TTAGAAAAGGGAGAATAGCA,0.023871,Propionibacterium acnes ATCC 11828,0.569050218,K00954 pantetheine-phosphate adenylyltransferase [EC:2.7.7.3] | (RefSeq) coaD; phosphopantetheine ad-1,1039452,TGG,+,48
+TTAGAAAAGGGAGAATAGCA,0.031088,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00954 pantetheine-phosphate adenylyltransferase [EC:2.7.7.3] | (RefSeq) coaD; phosphopantetheine ad-1,1039452,TGG,+,48
+CATACAATAGCGGTCATTCC,0.02556,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00954 pantetheine-phosphate adenylyltransferase [EC:2.7.7.3] | (RefSeq) coaD; phosphopantetheine ad-2,1039477,GGG,+,43
+GTCTAAATGACCATAAGTAA,0.026997,Acinetobacter johnsonii XBB1,0.394377729,K00954 pantetheine-phosphate adenylyltransferase [EC:2.7.7.3] | (RefSeq) coaD; phosphopantetheine ad-3,1039493,TGG,-,33
+CTTAAAAATAGTAAAAAAGA,0.019289,Acinetobacter johnsonii XBB1,0.394377729,K00954 pantetheine-phosphate adenylyltransferase [EC:2.7.7.3] | (RefSeq) coaD; phosphopantetheine ad-4,1039582,AGG,+,37
+CTTAAAAATAGTAAAAAAGA,0.027331,Acinetobacter johnsonii XBB1,0.394377729,K00954 pantetheine-phosphate adenylyltransferase [EC:2.7.7.3] | (RefSeq) coaD; phosphopantetheine ad-4,1039582,AGG,+,37
+CTTAAAAATAGTAAAAAAGA,0.010275,Acinetobacter johnsonii XBB1,0.394377729,K00954 pantetheine-phosphate adenylyltransferase [EC:2.7.7.3] | (RefSeq) coaD; phosphopantetheine ad-4,1039582,AGG,+,37
+CTTAAAAATAGTAAAAAAGA,0.046613,Acinetobacter johnsonii XBB1,0.394377729,K00954 pantetheine-phosphate adenylyltransferase [EC:2.7.7.3] | (RefSeq) coaD; phosphopantetheine ad-4,1039582,AGG,+,37
+CTTAAAAATAGTAAAAAAGA,0.118755,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00954 pantetheine-phosphate adenylyltransferase [EC:2.7.7.3] | (RefSeq) coaD; phosphopantetheine ad-4,1039582,AGG,+,37
+CTTAAAAATAGTAAAAAAGA,0.048146,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00954 pantetheine-phosphate adenylyltransferase [EC:2.7.7.3] | (RefSeq) coaD; phosphopantetheine ad-4,1039582,AGG,+,37
+CTTAAAAATAGTAAAAAAGA,0.026514,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00954 pantetheine-phosphate adenylyltransferase [EC:2.7.7.3] | (RefSeq) coaD; phosphopantetheine ad-4,1039582,AGG,+,37
+CTTAAAAATAGTAAAAAAGA,0.021201,Streptococcus mitis B6,0.266784934,K00954 pantetheine-phosphate adenylyltransferase [EC:2.7.7.3] | (RefSeq) coaD; phosphopantetheine ad-4,1039582,AGG,+,37
+CTTAAAAATAGTAAAAAAGA,0.029328,Streptococcus mitis B6,0.266784934,K00954 pantetheine-phosphate adenylyltransferase [EC:2.7.7.3] | (RefSeq) coaD; phosphopantetheine ad-4,1039582,AGG,+,37
+CTTAAAAATAGTAAAAAAGA,0.012908,Streptococcus mitis B6,0.266784934,K00954 pantetheine-phosphate adenylyltransferase [EC:2.7.7.3] | (RefSeq) coaD; phosphopantetheine ad-4,1039582,AGG,+,37
+CTTAAAAATAGTAAAAAAGA,0.018736,Streptococcus mitis B6,0.266784934,K00954 pantetheine-phosphate adenylyltransferase [EC:2.7.7.3] | (RefSeq) coaD; phosphopantetheine ad-4,1039582,AGG,+,37
+CTTAAAAATAGTAAAAAAGA,0.105967,Streptococcus mitis B6,0.266784934,K00954 pantetheine-phosphate adenylyltransferase [EC:2.7.7.3] | (RefSeq) coaD; phosphopantetheine ad-4,1039582,AGG,+,37
+CTTAAAAATAGTAAAAAAGA,0.026972,Streptococcus mitis B6,0.266784934,K00954 pantetheine-phosphate adenylyltransferase [EC:2.7.7.3] | (RefSeq) coaD; phosphopantetheine ad-4,1039582,AGG,+,37
+CTTAAAAATAGTAAAAAAGA,0.020235,Streptococcus mitis B6,0.266784934,K00954 pantetheine-phosphate adenylyltransferase [EC:2.7.7.3] | (RefSeq) coaD; phosphopantetheine ad-4,1039582,AGG,+,37
+GTTTAGTTTAGAAGAGCGTA,0.038573,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00954 pantetheine-phosphate adenylyltransferase [EC:2.7.7.3] | (RefSeq) coaD; phosphopantetheine ad-5,1039608,TGG,+,42
+CGACGACATCCTCGAAACTT,0.244015,Micrococcus luteus NCTC 2665,0.542439956,K02343 DNA polymerase III subunit gamma/tau [EC:2.7.7.7] | (RefSeq) DNA polymerase III subunits gamm-1,445296,TGG,-,38
+CGACGACATCCTCGAAACTT,0.073528,Micrococcus luteus NCTC 2665,0.542439956,K02343 DNA polymerase III subunit gamma/tau [EC:2.7.7.7] | (RefSeq) DNA polymerase III subunits gamm-1,445296,TGG,-,38
+CGACGACATCCTCGAAACTT,0.093905,Propionibacterium acnes ATCC 11828,0.569050218,K02343 DNA polymerase III subunit gamma/tau [EC:2.7.7.7] | (RefSeq) DNA polymerase III subunits gamm-1,445296,TGG,-,38
+CGACGACATCCTCGAAACTT,0.009469,Propionibacterium acnes ATCC 11828,0.569050218,K02343 DNA polymerase III subunit gamma/tau [EC:2.7.7.7] | (RefSeq) DNA polymerase III subunits gamm-1,445296,TGG,-,38
+CGACGACATCCTCGAAACTT,0.086403,Propionibacterium acnes ATCC 11828,0.569050218,K02343 DNA polymerase III subunit gamma/tau [EC:2.7.7.7] | (RefSeq) DNA polymerase III subunits gamm-1,445296,TGG,-,38
+CAAAGTTTCGAGGATGTCGT,0.062628,Propionibacterium acnes ATCC 11828,0.569050218,K02343 DNA polymerase III subunit gamma/tau [EC:2.7.7.7] | (RefSeq) DNA polymerase III subunits gamm-2,445315,CGG,+,45
+CAAAGTTTCGAGGATGTCGT,0.043493,Propionibacterium acnes ATCC 11828,0.569050218,K02343 DNA polymerase III subunit gamma/tau [EC:2.7.7.7] | (RefSeq) DNA polymerase III subunits gamm-2,445315,CGG,+,45
+CAAAGTTTCGAGGATGTCGT,0.082515,Propionibacterium acnes ATCC 11828,0.569050218,K02343 DNA polymerase III subunit gamma/tau [EC:2.7.7.7] | (RefSeq) DNA polymerase III subunits gamm-2,445315,CGG,+,45
+CAAAGTTTCGAGGATGTCGT,0.257833,Propionibacterium acnes ATCC 11828,0.569050218,K02343 DNA polymerase III subunit gamma/tau [EC:2.7.7.7] | (RefSeq) DNA polymerase III subunits gamm-2,445315,CGG,+,45
+CAAAGTTTCGAGGATGTCGT,0.020618,Propionibacterium acnes ATCC 11828,0.569050218,K02343 DNA polymerase III subunit gamma/tau [EC:2.7.7.7] | (RefSeq) DNA polymerase III subunits gamm-2,445315,CGG,+,45
+CAAAGTTTCGAGGATGTCGT,0.148245,Streptococcus mitis B6,0.266784934,K02343 DNA polymerase III subunit gamma/tau [EC:2.7.7.7] | (RefSeq) DNA polymerase III subunits gamm-2,445315,CGG,+,45
+TTTTAGTGGTCCGAGAGGTA,0.772827,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K02343 DNA polymerase III subunit gamma/tau [EC:2.7.7.7] | (RefSeq) DNA polymerase III subunits gamm-3,445404,CGG,+,46
+GATTGCTTTAGCAAACACTT,0.053255,Acinetobacter johnsonii XBB1,0.394377729,K02343 DNA polymerase III subunit gamma/tau [EC:2.7.7.7] | (RefSeq) DNA polymerase III subunits gamm-4,445424,TGG,-,35
+GATTGCTTTAGCAAACACTT,0.0264,Acinetobacter johnsonii XBB1,0.394377729,K02343 DNA polymerase III subunit gamma/tau [EC:2.7.7.7] | (RefSeq) DNA polymerase III subunits gamm-4,445424,TGG,-,35
+GATTGCTTTAGCAAACACTT,0.306334,Corynebacterium striatum strain 216 chromosome,0.492085153,K02343 DNA polymerase III subunit gamma/tau [EC:2.7.7.7] | (RefSeq) DNA polymerase III subunits gamm-4,445424,TGG,-,35
+GATTGCTTTAGCAAACACTT,0.031085,Streptococcus mitis B6,0.266784934,K02343 DNA polymerase III subunit gamma/tau [EC:2.7.7.7] | (RefSeq) DNA polymerase III subunits gamm-4,445424,TGG,-,35
+AACTGTCTAAATAGCACTGA,0.040155,Corynebacterium striatum strain 216 chromosome,0.492085153,K02343 DNA polymerase III subunit gamma/tau [EC:2.7.7.7] | (RefSeq) DNA polymerase III subunits gamm-5,445465,TGG,+,37
+ATAAATTAAGGGAAGCTACA,0,,,K02316 DNA primase [EC:2.7.7.101] | (RefSeq) DNA primase-1,1575898,AGG,-,39
+TCATCAATTTCATTTTCATA,0.022988,Acinetobacter johnsonii XBB1,0.394377729,K02316 DNA primase [EC:2.7.7.101] | (RefSeq) DNA primase-2,1575992,TGG,+,30
+TCATCAATTTCATTTTCATA,0.037653,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K02316 DNA primase [EC:2.7.7.101] | (RefSeq) DNA primase-2,1575992,TGG,+,30
+TCATCAATTTCATTTTCATA,0.007331,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K02316 DNA primase [EC:2.7.7.101] | (RefSeq) DNA primase-2,1575992,TGG,+,30
+TCATCAATTTCATTTTCATA,0.008074,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K02316 DNA primase [EC:2.7.7.101] | (RefSeq) DNA primase-2,1575992,TGG,+,30
+TCATCAATTTCATTTTCATA,0.011342,Streptococcus mitis B6,0.266784934,K02316 DNA primase [EC:2.7.7.101] | (RefSeq) DNA primase-2,1575992,TGG,+,30
+TCATCAATTTCATTTTCATA,0.048046,Streptococcus mitis B6,0.266784934,K02316 DNA primase [EC:2.7.7.101] | (RefSeq) DNA primase-2,1575992,TGG,+,30
+TCATCAATTTCATTTTCATA,0.019097,Streptococcus mitis B6,0.266784934,K02316 DNA primase [EC:2.7.7.101] | (RefSeq) DNA primase-2,1575992,TGG,+,30
+TTATTATGAAAGTGTTGATA,0.027295,Acinetobacter johnsonii XBB1,0.394377729,K02316 DNA primase [EC:2.7.7.101] | (RefSeq) DNA primase-3,1576158,AGG,-,35
+TTATTATGAAAGTGTTGATA,0.01526,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K02316 DNA primase [EC:2.7.7.101] | (RefSeq) DNA primase-3,1576158,AGG,-,35
+TTATTATGAAAGTGTTGATA,0.01766,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K02316 DNA primase [EC:2.7.7.101] | (RefSeq) DNA primase-3,1576158,AGG,-,35
+TTATTATGAAAGTGTTGATA,0.101453,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K02316 DNA primase [EC:2.7.7.101] | (RefSeq) DNA primase-3,1576158,AGG,-,35
+TTATTATGAAAGTGTTGATA,0.024279,Streptococcus mitis B6,0.266784934,K02316 DNA primase [EC:2.7.7.101] | (RefSeq) DNA primase-3,1576158,AGG,-,35
+TTATTATGAAAGTGTTGATA,0.039246,Streptococcus mitis B6,0.266784934,K02316 DNA primase [EC:2.7.7.101] | (RefSeq) DNA primase-3,1576158,AGG,-,35
+TTTGAGCCGTCAAGAAAAAG,0.037567,Streptococcus mitis B6,0.266784934,K02316 DNA primase [EC:2.7.7.101] | (RefSeq) DNA primase-4,1576230,CGG,-,40
+TTTGAGCCGTCAAGAAAAAG,0.021538,Streptococcus mitis B6,0.266784934,K02316 DNA primase [EC:2.7.7.101] | (RefSeq) DNA primase-4,1576230,CGG,-,40
+TGAACCTGAGCCAATTGGTA,0.025758,Acinetobacter johnsonii XBB1,0.394377729,K02316 DNA primase [EC:2.7.7.101] | (RefSeq) DNA primase-5,1576266,TGG,-,37
+TGAACCTGAGCCAATTGGTA,0.026665,Acinetobacter johnsonii XBB1,0.394377729,K02316 DNA primase [EC:2.7.7.101] | (RefSeq) DNA primase-5,1576266,TGG,-,37
+TGAACCTGAGCCAATTGGTA,0.049158,Streptococcus mitis B6,0.266784934,K02316 DNA primase [EC:2.7.7.101] | (RefSeq) DNA primase-5,1576266,TGG,-,37
+AAGATGGAGTAAATTTATGT,0.021645,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K02313 chromosomal replication initiator protein | (RefSeq) dnaA; chromosomal replication initiation-1,520,CGG,+,41
+AAGATGGAGTAAATTTATGT,0.025123,Streptococcus mitis B6,0.266784934,K02313 chromosomal replication initiator protein | (RefSeq) dnaA; chromosomal replication initiation-1,520,CGG,+,41
+TATGTCGGAAAAAGAAATTT,0.013758,Acinetobacter johnsonii XBB1,0.394377729,K02313 chromosomal replication initiator protein | (RefSeq) dnaA; chromosomal replication initiation-2,535,GGG,+,30
+TATGTCGGAAAAAGAAATTT,0.021593,Acinetobacter johnsonii XBB1,0.394377729,K02313 chromosomal replication initiator protein | (RefSeq) dnaA; chromosomal replication initiation-2,535,GGG,+,30
+TATGTCGGAAAAAGAAATTT,0.008427,Corynebacterium striatum strain 216 chromosome,0.492085153,K02313 chromosomal replication initiator protein | (RefSeq) dnaA; chromosomal replication initiation-2,535,GGG,+,30
+TATGTCGGAAAAAGAAATTT,0.183262,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K02313 chromosomal replication initiator protein | (RefSeq) dnaA; chromosomal replication initiation-2,535,GGG,+,30
+TATGTCGGAAAAAGAAATTT,0.013791,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K02313 chromosomal replication initiator protein | (RefSeq) dnaA; chromosomal replication initiation-2,535,GGG,+,30
+TATGTCGGAAAAAGAAATTT,0.032363,Streptococcus mitis B6,0.266784934,K02313 chromosomal replication initiator protein | (RefSeq) dnaA; chromosomal replication initiation-2,535,GGG,+,30
+TATGTCGGAAAAAGAAATTT,0.005091,Streptococcus mitis B6,0.266784934,K02313 chromosomal replication initiator protein | (RefSeq) dnaA; chromosomal replication initiation-2,535,GGG,+,30
+GAGCTTTACACGATTAAAGA,0.003193,Acinetobacter johnsonii XBB1,0.394377729,K02313 chromosomal replication initiator protein | (RefSeq) dnaA; chromosomal replication initiation-3,626,TGG,+,35
+GAGCTTTACACGATTAAAGA,0.009495,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K02313 chromosomal replication initiator protein | (RefSeq) dnaA; chromosomal replication initiation-3,626,TGG,+,35
+GTATTCCTTTTAATGCAAAT,0.022392,Acinetobacter johnsonii XBB1,0.394377729,K02313 chromosomal replication initiator protein | (RefSeq) dnaA; chromosomal replication initiation-4,669,TGG,+,33
+GTATTCCTTTTAATGCAAAT,0.08965,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K02313 chromosomal replication initiator protein | (RefSeq) dnaA; chromosomal replication initiation-4,669,TGG,+,33
+GTATTCCTTTTAATGCAAAT,0.029153,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K02313 chromosomal replication initiator protein | (RefSeq) dnaA; chromosomal replication initiation-4,669,TGG,+,33
+GTATTCCTTTTAATGCAAAT,0.017322,Streptococcus mitis B6,0.266784934,K02313 chromosomal replication initiator protein | (RefSeq) dnaA; chromosomal replication initiation-4,669,TGG,+,33
+CAACATCAAATAAGATTGCT,0.057108,Acinetobacter johnsonii XBB1,0.394377729,K02313 chromosomal replication initiator protein | (RefSeq) dnaA; chromosomal replication initiation-5,700,TGG,-,37
+CAACATCAAATAAGATTGCT,0.029986,Acinetobacter johnsonii XBB1,0.394377729,K02313 chromosomal replication initiator protein | (RefSeq) dnaA; chromosomal replication initiation-5,700,TGG,-,37
+AGAGCAAAAAGATTCTTTAA,0.023258,Acinetobacter johnsonii XBB1,0.394377729,K03686 molecular chaperone DnaJ | (RefSeq) chaperone protein DnaJ-1,1591346,GGG,-,32
+AGAGCAAAAAGATTCTTTAA,0.009232,Acinetobacter johnsonii XBB1,0.394377729,K03686 molecular chaperone DnaJ | (RefSeq) chaperone protein DnaJ-1,1591346,GGG,-,32
+AGAGCAAAAAGATTCTTTAA,0.025181,Acinetobacter johnsonii XBB1,0.394377729,K03686 molecular chaperone DnaJ | (RefSeq) chaperone protein DnaJ-1,1591346,GGG,-,32
+AGAGCAAAAAGATTCTTTAA,0.021751,Acinetobacter johnsonii XBB1,0.394377729,K03686 molecular chaperone DnaJ | (RefSeq) chaperone protein DnaJ-1,1591346,GGG,-,32
+AGAGCAAAAAGATTCTTTAA,0.010869,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03686 molecular chaperone DnaJ | (RefSeq) chaperone protein DnaJ-1,1591346,GGG,-,32
+AGAGCAAAAAGATTCTTTAA,0.116615,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03686 molecular chaperone DnaJ | (RefSeq) chaperone protein DnaJ-1,1591346,GGG,-,32
+AGAGCAAAAAGATTCTTTAA,0.031359,Streptococcus mitis B6,0.266784934,K03686 molecular chaperone DnaJ | (RefSeq) chaperone protein DnaJ-1,1591346,GGG,-,32
+GCTCTATCTTTAAAATTCGA,0.013307,Acinetobacter johnsonii XBB1,0.394377729,K03686 molecular chaperone DnaJ | (RefSeq) chaperone protein DnaJ-2,1591382,AGG,+,33
+TAATTTCTTCACCATTTAAT,0.062266,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03686 molecular chaperone DnaJ | (RefSeq) chaperone protein DnaJ-3,1591413,TGG,+,33
+TAATTTCTTCACCATTTAAT,0.092339,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03686 molecular chaperone DnaJ | (RefSeq) chaperone protein DnaJ-3,1591413,TGG,+,33
+TAATTTCTTCACCATTTAAT,0.08924,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03686 molecular chaperone DnaJ | (RefSeq) chaperone protein DnaJ-3,1591413,TGG,+,33
+TAATTTCTTCACCATTTAAT,0.011593,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03686 molecular chaperone DnaJ | (RefSeq) chaperone protein DnaJ-3,1591413,TGG,+,33
+TGTCTATCTGTTAATTTAGT,0.009444,Streptococcus mitis B6,0.266784934,K03686 molecular chaperone DnaJ | (RefSeq) chaperone protein DnaJ-4,1591460,AGG,+,36
+TGTCTATCTGTTAATTTAGT,0.098503,Streptococcus mitis B6,0.266784934,K03686 molecular chaperone DnaJ | (RefSeq) chaperone protein DnaJ-4,1591460,AGG,+,36
+AATGTTCATGGCTATGGATA,0.022067,Acinetobacter johnsonii XBB1,0.394377729,K03686 molecular chaperone DnaJ | (RefSeq) chaperone protein DnaJ-5,1591496,CGG,-,45
+AATGTTCATGGCTATGGATA,0.216439,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03686 molecular chaperone DnaJ | (RefSeq) chaperone protein DnaJ-5,1591496,CGG,-,45
+AATGTTCATGGCTATGGATA,0.08176,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03686 molecular chaperone DnaJ | (RefSeq) chaperone protein DnaJ-5,1591496,CGG,-,45
+AATAAAAGAGTAGTTATTAC,0.120667,Acinetobacter johnsonii XBB1,0.394377729,K09458 3-oxoacyl-[acyl-carrier-protein] synthase II [EC:2.3.1.179] | (RefSeq) 3-oxoacyl-synthase-1,892126,AGG,+,40
+AATAAAAGAGTAGTTATTAC,0.041976,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K09458 3-oxoacyl-[acyl-carrier-protein] synthase II [EC:2.3.1.179] | (RefSeq) 3-oxoacyl-synthase-1,892126,AGG,+,40
+AATAAAAGAGTAGTTATTAC,0.074504,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K09458 3-oxoacyl-[acyl-carrier-protein] synthase II [EC:2.3.1.179] | (RefSeq) 3-oxoacyl-synthase-1,892126,AGG,+,40
+AATAAAAGAGTAGTTATTAC,0.050489,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K09458 3-oxoacyl-[acyl-carrier-protein] synthase II [EC:2.3.1.179] | (RefSeq) 3-oxoacyl-synthase-1,892126,AGG,+,40
+AATAAAAGAGTAGTTATTAC,0.045649,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K09458 3-oxoacyl-[acyl-carrier-protein] synthase II [EC:2.3.1.179] | (RefSeq) 3-oxoacyl-synthase-1,892126,AGG,+,40
+AATAAAAGAGTAGTTATTAC,0.089796,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K09458 3-oxoacyl-[acyl-carrier-protein] synthase II [EC:2.3.1.179] | (RefSeq) 3-oxoacyl-synthase-1,892126,AGG,+,40
+AATAAAAGAGTAGTTATTAC,0.047579,Streptococcus mitis B6,0.266784934,K09458 3-oxoacyl-[acyl-carrier-protein] synthase II [EC:2.3.1.179] | (RefSeq) 3-oxoacyl-synthase-1,892126,AGG,+,40
+AATAAAAGAGTAGTTATTAC,0.100211,Streptococcus mitis B6,0.266784934,K09458 3-oxoacyl-[acyl-carrier-protein] synthase II [EC:2.3.1.179] | (RefSeq) 3-oxoacyl-synthase-1,892126,AGG,+,40
+AATAAAAGAGTAGTTATTAC,0.0816,Streptococcus mitis B6,0.266784934,K09458 3-oxoacyl-[acyl-carrier-protein] synthase II [EC:2.3.1.179] | (RefSeq) 3-oxoacyl-synthase-1,892126,AGG,+,40
+ATGGGAGCCCTTTCTCCAAT,0.032513,Corynebacterium striatum strain 216 chromosome,0.492085153,K09458 3-oxoacyl-[acyl-carrier-protein] synthase II [EC:2.3.1.179] | (RefSeq) 3-oxoacyl-synthase-2,892150,CGG,+,32
+ATGGGAGCCCTTTCTCCAAT,0.020803,Propionibacterium acnes ATCC 11828,0.569050218,K09458 3-oxoacyl-[acyl-carrier-protein] synthase II [EC:2.3.1.179] | (RefSeq) 3-oxoacyl-synthase-2,892150,CGG,+,32
+ATGGGAGCCCTTTCTCCAAT,0.119078,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K09458 3-oxoacyl-[acyl-carrier-protein] synthase II [EC:2.3.1.179] | (RefSeq) 3-oxoacyl-synthase-2,892150,CGG,+,32
+GTAATGATGTCAAAACAACA,0.084681,Acinetobacter johnsonii XBB1,0.394377729,K09458 3-oxoacyl-[acyl-carrier-protein] synthase II [EC:2.3.1.179] | (RefSeq) 3-oxoacyl-synthase-3,892172,TGG,+,33
+GTAATGATGTCAAAACAACA,0.008917,Acinetobacter johnsonii XBB1,0.394377729,K09458 3-oxoacyl-[acyl-carrier-protein] synthase II [EC:2.3.1.179] | (RefSeq) 3-oxoacyl-synthase-3,892172,TGG,+,33
+GTAATGATGTCAAAACAACA,0.024668,Corynebacterium striatum strain 216 chromosome,0.492085153,K09458 3-oxoacyl-[acyl-carrier-protein] synthase II [EC:2.3.1.179] | (RefSeq) 3-oxoacyl-synthase-3,892172,TGG,+,33
+GTAATGATGTCAAAACAACA,0.126538,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K09458 3-oxoacyl-[acyl-carrier-protein] synthase II [EC:2.3.1.179] | (RefSeq) 3-oxoacyl-synthase-3,892172,TGG,+,33
+GTAATGATGTCAAAACAACA,0.018841,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K09458 3-oxoacyl-[acyl-carrier-protein] synthase II [EC:2.3.1.179] | (RefSeq) 3-oxoacyl-synthase-3,892172,TGG,+,33
+AATGCTCTAAAAGGCGTAAA,0.014228,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K09458 3-oxoacyl-[acyl-carrier-protein] synthase II [EC:2.3.1.179] | (RefSeq) 3-oxoacyl-synthase-4,892198,TGG,+,36
+CCTGCTAAGTGAACGCTATA,0,,,K09458 3-oxoacyl-[acyl-carrier-protein] synthase II [EC:2.3.1.179] | (RefSeq) 3-oxoacyl-synthase-5,892234,AGG,-,43
+TGTCAGGAGGTGCCTATCTA,0,,,K03590 cell division protein FtsA | (RefSeq) cell division protein-1,1100157,TGG,+,48
+TACTACGTAAGTATTGATAT,0.079609,Acinetobacter johnsonii XBB1,0.394377729,K03590 cell division protein FtsA | (RefSeq) cell division protein-2,1100188,TGG,+,46
+TACTACGTAAGTATTGATAT,0.074334,Propionibacterium acnes ATCC 11828,0.569050218,K03590 cell division protein FtsA | (RefSeq) cell division protein-2,1100188,TGG,+,46
+TACTACGTAAGTATTGATAT,0.020117,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03590 cell division protein FtsA | (RefSeq) cell division protein-2,1100188,TGG,+,46
+TACTACGTAAGTATTGATAT,0.076008,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03590 cell division protein FtsA | (RefSeq) cell division protein-2,1100188,TGG,+,46
+TACTACGTAAGTATTGATAT,0.154228,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03590 cell division protein FtsA | (RefSeq) cell division protein-2,1100188,TGG,+,46
+TACTACGTAAGTATTGATAT,0.032393,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03590 cell division protein FtsA | (RefSeq) cell division protein-2,1100188,TGG,+,46
+TACTACGTAAGTATTGATAT,0.071679,Streptococcus mitis B6,0.266784934,K03590 cell division protein FtsA | (RefSeq) cell division protein-2,1100188,TGG,+,46
+TCAAGCGTAAAAACAATAGT,0.04895,Acinetobacter johnsonii XBB1,0.394377729,K03590 cell division protein FtsA | (RefSeq) cell division protein-3,1100215,AGG,+,30
+TCAAGCGTAAAAACAATAGT,0.021783,Acinetobacter johnsonii XBB1,0.394377729,K03590 cell division protein FtsA | (RefSeq) cell division protein-3,1100215,AGG,+,30
+TCAAGCGTAAAAACAATAGT,0.042386,Propionibacterium acnes ATCC 11828,0.569050218,K03590 cell division protein FtsA | (RefSeq) cell division protein-3,1100215,AGG,+,30
+CACAATGGTATAAATGTGAT,0.029456,Acinetobacter johnsonii XBB1,0.394377729,K03590 cell division protein FtsA | (RefSeq) cell division protein-4,1100248,AGG,+,37
+CACAATGGTATAAATGTGAT,0.088413,Acinetobacter johnsonii XBB1,0.394377729,K03590 cell division protein FtsA | (RefSeq) cell division protein-4,1100248,AGG,+,37
+CACAATGGTATAAATGTGAT,0.025357,Propionibacterium acnes ATCC 11828,0.569050218,K03590 cell division protein FtsA | (RefSeq) cell division protein-4,1100248,AGG,+,37
+CACAATGGTATAAATGTGAT,0.085272,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03590 cell division protein FtsA | (RefSeq) cell division protein-4,1100248,AGG,+,37
+CACAATGGTATAAATGTGAT,0.110833,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03590 cell division protein FtsA | (RefSeq) cell division protein-4,1100248,AGG,+,37
+CACAATGGTATAAATGTGAT,0.0252,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03590 cell division protein FtsA | (RefSeq) cell division protein-4,1100248,AGG,+,37
+CACAATGGTATAAATGTGAT,0.023304,Streptococcus mitis B6,0.266784934,K03590 cell division protein FtsA | (RefSeq) cell division protein-4,1100248,AGG,+,37
+ACAGGACAAACCTACACGAG,0.010075,Acinetobacter johnsonii XBB1,0.394377729,K03590 cell division protein FtsA | (RefSeq) cell division protein-5,1100272,CGG,+,34
+ACAGGACAAACCTACACGAG,0.008114,Corynebacterium striatum strain 216 chromosome,0.492085153,K03590 cell division protein FtsA | (RefSeq) cell division protein-5,1100272,CGG,+,34
+ACAGGACAAACCTACACGAG,0.154816,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03590 cell division protein FtsA | (RefSeq) cell division protein-5,1100272,CGG,+,34
+CTGGAAGGAGAAAAAATACA,0.017035,Acinetobacter johnsonii XBB1,0.394377729,K02355 elongation factor G | (RefSeq) fusA; elongation factor G-1,531032,TGG,+,34
+CTGGAAGGAGAAAAAATACA,0.013113,Acinetobacter johnsonii XBB1,0.394377729,K02355 elongation factor G | (RefSeq) fusA; elongation factor G-1,531032,TGG,+,34
+CTGGAAGGAGAAAAAATACA,0.85503,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K02355 elongation factor G | (RefSeq) fusA; elongation factor G-1,531032,TGG,+,34
+CTGGAAGGAGAAAAAATACA,0.049299,Streptococcus mitis B6,0.266784934,K02355 elongation factor G | (RefSeq) fusA; elongation factor G-1,531032,TGG,+,34
+CTGGAAGGAGAAAAAATACA,0.016595,Streptococcus mitis B6,0.266784934,K02355 elongation factor G | (RefSeq) fusA; elongation factor G-1,531032,TGG,+,34
+AACTCGTAATATCGGTATCA,0.043268,Acinetobacter johnsonii XBB1,0.394377729,K02355 elongation factor G | (RefSeq) fusA; elongation factor G-2,531077,TGG,+,40
+ATCATGGCTCACATTGATGC,0.039449,Acinetobacter johnsonii XBB1,0.394377729,K02355 elongation factor G | (RefSeq) fusA; elongation factor G-3,531093,TGG,+,39
+ATCATGGCTCACATTGATGC,0.029599,Acinetobacter johnsonii XBB1,0.394377729,K02355 elongation factor G | (RefSeq) fusA; elongation factor G-3,531093,TGG,+,39
+ATCATGGCTCACATTGATGC,0.006672,Acinetobacter johnsonii XBB1,0.394377729,K02355 elongation factor G | (RefSeq) fusA; elongation factor G-3,531093,TGG,+,39
+ATCATGGCTCACATTGATGC,0.178152,Propionibacterium acnes ATCC 11828,0.569050218,K02355 elongation factor G | (RefSeq) fusA; elongation factor G-3,531093,TGG,+,39
+ATCATGGCTCACATTGATGC,0.009846,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K02355 elongation factor G | (RefSeq) fusA; elongation factor G-3,531093,TGG,+,39
+ATCATGGCTCACATTGATGC,0.273544,Streptococcus mitis B6,0.266784934,K02355 elongation factor G | (RefSeq) fusA; elongation factor G-3,531093,TGG,+,39
+TTTCACCAATTTTGTGGATA,0.018213,Acinetobacter johnsonii XBB1,0.394377729,K02355 elongation factor G | (RefSeq) fusA; elongation factor G-4,531137,CGG,-,40
+TTTCACCAATTTTGTGGATA,0.045402,Streptococcus mitis B6,0.266784934,K02355 elongation factor G | (RefSeq) fusA; elongation factor G-4,531137,CGG,-,40
+TTTCACCAATTTTGTGGATA,0.039691,Streptococcus mitis B6,0.266784934,K02355 elongation factor G | (RefSeq) fusA; elongation factor G-4,531137,CGG,-,40
+AAAATTGGTGAAACACACGA,0.120955,Acinetobacter johnsonii XBB1,0.394377729,K02355 elongation factor G | (RefSeq) fusA; elongation factor G-5,531165,AGG,+,35
+AAAATTGGTGAAACACACGA,0.034415,Corynebacterium striatum strain 216 chromosome,0.492085153,K02355 elongation factor G | (RefSeq) fusA; elongation factor G-5,531165,AGG,+,35
+AAAATTGGTGAAACACACGA,0.087315,Propionibacterium acnes ATCC 11828,0.569050218,K02355 elongation factor G | (RefSeq) fusA; elongation factor G-5,531165,AGG,+,35
+AAAATTGGTGAAACACACGA,0.095607,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K02355 elongation factor G | (RefSeq) fusA; elongation factor G-5,531165,AGG,+,35
+AAAATTGGTGAAACACACGA,0.591136,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K02355 elongation factor G | (RefSeq) fusA; elongation factor G-5,531165,AGG,+,35
+AAAATTGGTGAAACACACGA,0.125996,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K02355 elongation factor G | (RefSeq) fusA; elongation factor G-5,531165,AGG,+,35
+AAAATTGGTGAAACACACGA,0.19677,Streptococcus mitis B6,0.266784934,K02355 elongation factor G | (RefSeq) fusA; elongation factor G-5,531165,AGG,+,35
+AAAATTGGTGAAACACACGA,0.120126,Streptococcus mitis B6,0.266784934,K02355 elongation factor G | (RefSeq) fusA; elongation factor G-5,531165,AGG,+,35
+TCTTTAGTGAAAGTACGTTT,0.010241,Acinetobacter johnsonii XBB1,0.394377729,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-1,1242812,TGG,-,36
+TCTTTAGTGAAAGTACGTTT,0.026178,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-1,1242812,TGG,-,36
+TCTTTAGTGAAAGTACGTTT,0.061847,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-1,1242812,TGG,-,36
+TCTTTAGTGAAAGTACGTTT,0.028258,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-1,1242812,TGG,-,36
+TCTTTAGTGAAAGTACGTTT,0.015664,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-1,1242812,TGG,-,36
+CATTCGTAAATTTGCAGAAG,0.034263,Acinetobacter johnsonii XBB1,0.394377729,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-2,1242856,AGG,+,35
+CATTCGTAAATTTGCAGAAG,0.024715,Acinetobacter johnsonii XBB1,0.394377729,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-2,1242856,AGG,+,35
+CATTCGTAAATTTGCAGAAG,0.01212,Acinetobacter johnsonii XBB1,0.394377729,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-2,1242856,AGG,+,35
+CATTCGTAAATTTGCAGAAG,0.016673,Acinetobacter johnsonii XBB1,0.394377729,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-2,1242856,AGG,+,35
+CATTCGTAAATTTGCAGAAG,0.051012,Acinetobacter johnsonii XBB1,0.394377729,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-2,1242856,AGG,+,35
+CATTCGTAAATTTGCAGAAG,0.014277,Acinetobacter johnsonii XBB1,0.394377729,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-2,1242856,AGG,+,35
+CATTCGTAAATTTGCAGAAG,0.125727,Propionibacterium acnes ATCC 11828,0.569050218,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-2,1242856,AGG,+,35
+TTACAATTCACTGATATTTT,0.028037,Acinetobacter johnsonii XBB1,0.394377729,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-3,1242899,AGG,+,33
+TTACAATTCACTGATATTTT,0.028281,Acinetobacter johnsonii XBB1,0.394377729,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-3,1242899,AGG,+,33
+TTACAATTCACTGATATTTT,0.024697,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-3,1242899,AGG,+,33
+TTACAATTCACTGATATTTT,0.020058,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-3,1242899,AGG,+,33
+GATAACGAAATGATGTTTGA,0.08386,Acinetobacter johnsonii XBB1,0.394377729,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-4,1242971,CGG,+,40
+GATAACGAAATGATGTTTGA,0.079427,Acinetobacter johnsonii XBB1,0.394377729,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-4,1242971,CGG,+,40
+GATAACGAAATGATGTTTGA,0.025306,Acinetobacter johnsonii XBB1,0.394377729,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-4,1242971,CGG,+,40
+GATAACGAAATGATGTTTGA,0.016858,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-4,1242971,CGG,+,40
+GATAACGAAATGATGTTTGA,0.010628,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-4,1242971,CGG,+,40
+GATAACGAAATGATGTTTGA,0.151597,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-4,1242971,CGG,+,40
+GATAACGAAATGATGTTTGA,0.01338,Streptococcus mitis B6,0.266784934,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-4,1242971,CGG,+,40
+GATAACGAAATGATGTTTGA,0.049417,Streptococcus mitis B6,0.266784934,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-4,1242971,CGG,+,40
+GATAACGAAATGATGTTTGA,0.0355,Streptococcus mitis B6,0.266784934,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-4,1242971,CGG,+,40
+TTTGACGGTTCTTCTATCGA,0.110329,Acinetobacter johnsonii XBB1,0.394377729,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-5,1242986,AGG,+,37
+TTTGACGGTTCTTCTATCGA,0.062817,Corynebacterium striatum strain 216 chromosome,0.492085153,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-5,1242986,AGG,+,37
+TTTGACGGTTCTTCTATCGA,0.091702,Micrococcus luteus NCTC 2665,0.542439956,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-5,1242986,AGG,+,37
+TTTGACGGTTCTTCTATCGA,0.061829,Propionibacterium acnes ATCC 11828,0.569050218,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-5,1242986,AGG,+,37
+TTTGACGGTTCTTCTATCGA,0.029042,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-5,1242986,AGG,+,37
+TTTGACGGTTCTTCTATCGA,0.021092,Streptococcus mitis B6,0.266784934,K01915 glutamine synthetase [EC:6.3.1.2] | (RefSeq) glutamine synthetase-5,1242986,AGG,+,37
+CTTAGAGAGGTCGTAAGGCA,0.290865,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00942 guanylate kinase [EC:2.7.4.8] | (RefSeq) gmk; guanylate kinase-1,1126851,TGG,+,45
+TTATCAGGACCATCTGGAGT,0.013581,Acinetobacter johnsonii XBB1,0.394377729,K00942 guanylate kinase [EC:2.7.4.8] | (RefSeq) gmk; guanylate kinase-2,1126900,AGG,+,41
+TTATCAGGACCATCTGGAGT,0.047294,Corynebacterium striatum strain 216 chromosome,0.492085153,K00942 guanylate kinase [EC:2.7.4.8] | (RefSeq) gmk; guanylate kinase-2,1126900,AGG,+,41
+TTATCAGGACCATCTGGAGT,0.133837,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00942 guanylate kinase [EC:2.7.4.8] | (RefSeq) gmk; guanylate kinase-2,1126900,AGG,+,41
+TTATCAGGACCATCTGGAGT,0.029569,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00942 guanylate kinase [EC:2.7.4.8] | (RefSeq) gmk; guanylate kinase-2,1126900,AGG,+,41
+TTATCAGGACCATCTGGAGT,0.005659,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00942 guanylate kinase [EC:2.7.4.8] | (RefSeq) gmk; guanylate kinase-2,1126900,AGG,+,41
+TTATCAGGACCATCTGGAGT,0.210668,Streptococcus mitis B6,0.266784934,K00942 guanylate kinase [EC:2.7.4.8] | (RefSeq) gmk; guanylate kinase-2,1126900,AGG,+,41
+TTATCAGGACCATCTGGAGT,0.019031,Streptococcus mitis B6,0.266784934,K00942 guanylate kinase [EC:2.7.4.8] | (RefSeq) gmk; guanylate kinase-2,1126900,AGG,+,41
+TTATCAGGACCATCTGGAGT,0.047247,Streptococcus mitis B6,0.266784934,K00942 guanylate kinase [EC:2.7.4.8] | (RefSeq) gmk; guanylate kinase-2,1126900,AGG,+,41
+GAATACTTATATGATGTACT,0.137982,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00942 guanylate kinase [EC:2.7.4.8] | (RefSeq) gmk; guanylate kinase-3,1126939,TGG,-,36
+GAATACTTATATGATGTACT,0.052071,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00942 guanylate kinase [EC:2.7.4.8] | (RefSeq) gmk; guanylate kinase-3,1126939,TGG,-,36
+GAATACTTATATGATGTACT,0.013296,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00942 guanylate kinase [EC:2.7.4.8] | (RefSeq) gmk; guanylate kinase-3,1126939,TGG,-,36
+ATGCGTGAAGGTGAAGTTGA,0.220346,Acinetobacter johnsonii XBB1,0.394377729,K00942 guanylate kinase [EC:2.7.4.8] | (RefSeq) gmk; guanylate kinase-4,1127002,TGG,+,52
+ATGCGTGAAGGTGAAGTTGA,0.254173,Acinetobacter johnsonii XBB1,0.394377729,K00942 guanylate kinase [EC:2.7.4.8] | (RefSeq) gmk; guanylate kinase-4,1127002,TGG,+,52
+ATGCGTGAAGGTGAAGTTGA,0.016019,Acinetobacter johnsonii XBB1,0.394377729,K00942 guanylate kinase [EC:2.7.4.8] | (RefSeq) gmk; guanylate kinase-4,1127002,TGG,+,52
+ATGCGTGAAGGTGAAGTTGA,0.03174,Micrococcus luteus NCTC 2665,0.542439956,K00942 guanylate kinase [EC:2.7.4.8] | (RefSeq) gmk; guanylate kinase-4,1127002,TGG,+,52
+ATGCGTGAAGGTGAAGTTGA,0.023122,Propionibacterium acnes ATCC 11828,0.569050218,K00942 guanylate kinase [EC:2.7.4.8] | (RefSeq) gmk; guanylate kinase-4,1127002,TGG,+,52
+ATGCGTGAAGGTGAAGTTGA,0.050001,Propionibacterium acnes ATCC 11828,0.569050218,K00942 guanylate kinase [EC:2.7.4.8] | (RefSeq) gmk; guanylate kinase-4,1127002,TGG,+,52
+ATGCGTGAAGGTGAAGTTGA,0.019528,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00942 guanylate kinase [EC:2.7.4.8] | (RefSeq) gmk; guanylate kinase-4,1127002,TGG,+,52
+ATTCAGCATATTCTATAAAT,0.039245,Acinetobacter johnsonii XBB1,0.394377729,K00942 guanylate kinase [EC:2.7.4.8] | (RefSeq) gmk; guanylate kinase-5,1127061,TGG,-,34
+ATTCAGCATATTCTATAAAT,0.039226,Acinetobacter johnsonii XBB1,0.394377729,K00942 guanylate kinase [EC:2.7.4.8] | (RefSeq) gmk; guanylate kinase-5,1127061,TGG,-,34
+ATTCAGCATATTCTATAAAT,0.026532,Acinetobacter johnsonii XBB1,0.394377729,K00942 guanylate kinase [EC:2.7.4.8] | (RefSeq) gmk; guanylate kinase-5,1127061,TGG,-,34
+ATTCAGCATATTCTATAAAT,0.022512,Streptococcus mitis B6,0.266784934,K00942 guanylate kinase [EC:2.7.4.8] | (RefSeq) gmk; guanylate kinase-5,1127061,TGG,-,34
+CCTAACATGGGTGGCATGCC,0.03174,Micrococcus luteus NCTC 2665,0.542439956,K04077 chaperonin GroEL | (RefSeq) groEL; chaperonin GroEL-1,2086771,AGG,-,55
+CCTAACATGGGTGGCATGCC,0.068956,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K04077 chaperonin GroEL | (RefSeq) groEL; chaperonin GroEL-1,2086771,AGG,-,55
+CCTGGCATGCCACCCATGTT,0.275713,Propionibacterium acnes ATCC 11828,0.569050218,K04077 chaperonin GroEL | (RefSeq) groEL; chaperonin GroEL-2,2086789,AGG,+,48
+CCTGGCATGCCACCCATGTT,0.355706,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K04077 chaperonin GroEL | (RefSeq) groEL; chaperonin GroEL-2,2086789,AGG,+,48
+CCTGGCATGCCACCCATGTT,0.126652,Streptococcus mitis B6,0.266784934,K04077 chaperonin GroEL | (RefSeq) groEL; chaperonin GroEL-2,2086789,AGG,+,48
+AATGTTCTTAACGACTGAAG,0,,,K04077 chaperonin GroEL | (RefSeq) groEL; chaperonin GroEL-3,2086829,CGG,-,33
+GCTGAGCGTGTTACTTTAGT,0.051307,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K04077 chaperonin GroEL | (RefSeq) groEL; chaperonin GroEL-4,2086897,TGG,+,37
+GCTGAGCGTGTTACTTTAGT,0.029642,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K04077 chaperonin GroEL | (RefSeq) groEL; chaperonin GroEL-4,2086897,TGG,+,37
+GCTGAGCGTGTTACTTTAGT,0.103511,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K04077 chaperonin GroEL | (RefSeq) groEL; chaperonin GroEL-4,2086897,TGG,+,37
+TGGGTTAATATGTTAGAAGA,0.308673,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K04077 chaperonin GroEL | (RefSeq) groEL; chaperonin GroEL-5,2086912,AGG,-,33
+TGGGTTAATATGTTAGAAGA,0.013159,Streptococcus mitis B6,0.266784934,K04077 chaperonin GroEL | (RefSeq) groEL; chaperonin GroEL-5,2086912,AGG,-,33
+TATAAAGTAACAGAAAGCGA,0,,,K02470 DNA gyrase subunit B [EC:5.6.2.2] | (RefSeq) DNA gyrase subunit B-1,5034,TGG,+,35
+ATTGTCAGATGTAAACAACA,0,,,K02470 DNA gyrase subunit B [EC:5.6.2.2] | (RefSeq) DNA gyrase subunit B-2,5064,CGG,+,35
+ACACGGATAATTATGGTGCT,0.007686,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K02470 DNA gyrase subunit B [EC:5.6.2.2] | (RefSeq) DNA gyrase subunit B-3,5081,GGG,+,40
+ACACGGATAATTATGGTGCT,0.015601,Streptococcus mitis B6,0.266784934,K02470 DNA gyrase subunit B [EC:5.6.2.2] | (RefSeq) DNA gyrase subunit B-3,5081,GGG,+,40
+GGGCAAATACAAGTATTAGA,0.061787,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K02470 DNA gyrase subunit B [EC:5.6.2.2] | (RefSeq) DNA gyrase subunit B-4,5101,AGG,+,35
+GGGCAAATACAAGTATTAGA,0.014567,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K02470 DNA gyrase subunit B [EC:5.6.2.2] | (RefSeq) DNA gyrase subunit B-4,5101,AGG,+,35
+GGGCAAATACAAGTATTAGA,0.02503,Streptococcus mitis B6,0.266784934,K02470 DNA gyrase subunit B [EC:5.6.2.2] | (RefSeq) DNA gyrase subunit B-4,5101,AGG,+,35
+GTCGATCCTATATACATACC,0.004055,Acinetobacter johnsonii XBB1,0.394377729,K02470 DNA gyrase subunit B [EC:5.6.2.2] | (RefSeq) DNA gyrase subunit B-5,5128,TGG,-,32
+GTCGATCCTATATACATACC,0.03517,Corynebacterium striatum strain 216 chromosome,0.492085153,K02470 DNA gyrase subunit B [EC:5.6.2.2] | (RefSeq) DNA gyrase subunit B-5,5128,TGG,-,32
+GTCGATCCTATATACATACC,0.165716,Propionibacterium acnes ATCC 11828,0.569050218,K02470 DNA gyrase subunit B [EC:5.6.2.2] | (RefSeq) DNA gyrase subunit B-5,5128,TGG,-,32
+GTCGATCCTATATACATACC,0.057492,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K02470 DNA gyrase subunit B [EC:5.6.2.2] | (RefSeq) DNA gyrase subunit B-5,5128,TGG,-,32
+GTCGATCCTATATACATACC,0.049003,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K02470 DNA gyrase subunit B [EC:5.6.2.2] | (RefSeq) DNA gyrase subunit B-5,5128,TGG,-,32
+AATCGTGAAGTTCGCATTAT,0.052154,Acinetobacter johnsonii XBB1,0.394377729,K00075 UDP-N-acetylmuramate dehydrogenase [EC:1.3.1.98] | (RefSeq) murB; UDP-N-acetylenolpyruvoylglu-1,735535,TGG,-,43
+AATCGTGAAGTTCGCATTAT,0.092139,Corynebacterium striatum strain 216 chromosome,0.492085153,K00075 UDP-N-acetylmuramate dehydrogenase [EC:1.3.1.98] | (RefSeq) murB; UDP-N-acetylenolpyruvoylglu-1,735535,TGG,-,43
+AATCGTGAAGTTCGCATTAT,0.086048,Corynebacterium striatum strain 216 chromosome,0.492085153,K00075 UDP-N-acetylmuramate dehydrogenase [EC:1.3.1.98] | (RefSeq) murB; UDP-N-acetylenolpyruvoylglu-1,735535,TGG,-,43
+AATCGTGAAGTTCGCATTAT,0.045124,Propionibacterium acnes ATCC 11828,0.569050218,K00075 UDP-N-acetylmuramate dehydrogenase [EC:1.3.1.98] | (RefSeq) murB; UDP-N-acetylenolpyruvoylglu-1,735535,TGG,-,43
+AATCGTGAAGTTCGCATTAT,0.023112,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00075 UDP-N-acetylmuramate dehydrogenase [EC:1.3.1.98] | (RefSeq) murB; UDP-N-acetylenolpyruvoylglu-1,735535,TGG,-,43
+AATCGTGAAGTTCGCATTAT,0.016003,Streptococcus mitis B6,0.266784934,K00075 UDP-N-acetylmuramate dehydrogenase [EC:1.3.1.98] | (RefSeq) murB; UDP-N-acetylenolpyruvoylglu-1,735535,TGG,-,43
+AATCGTGAAGTTCGCATTAT,0.147665,Streptococcus mitis B6,0.266784934,K00075 UDP-N-acetylmuramate dehydrogenase [EC:1.3.1.98] | (RefSeq) murB; UDP-N-acetylenolpyruvoylglu-1,735535,TGG,-,43
+AAGACCGTCAAAGAAAAATT,0.009621,Acinetobacter johnsonii XBB1,0.394377729,K00075 UDP-N-acetylmuramate dehydrogenase [EC:1.3.1.98] | (RefSeq) murB; UDP-N-acetylenolpyruvoylglu-2,735568,TGG,-,30
+AAGACCGTCAAAGAAAAATT,0.010102,Acinetobacter johnsonii XBB1,0.394377729,K00075 UDP-N-acetylmuramate dehydrogenase [EC:1.3.1.98] | (RefSeq) murB; UDP-N-acetylenolpyruvoylglu-2,735568,TGG,-,30
+AAGACCGTCAAAGAAAAATT,0.055491,Propionibacterium acnes ATCC 11828,0.569050218,K00075 UDP-N-acetylmuramate dehydrogenase [EC:1.3.1.98] | (RefSeq) murB; UDP-N-acetylenolpyruvoylglu-2,735568,TGG,-,30
+AAGACCGTCAAAGAAAAATT,0.043925,Propionibacterium acnes ATCC 11828,0.569050218,K00075 UDP-N-acetylmuramate dehydrogenase [EC:1.3.1.98] | (RefSeq) murB; UDP-N-acetylenolpyruvoylglu-2,735568,TGG,-,30
+AAGACCGTCAAAGAAAAATT,0.03408,Streptococcus mitis B6,0.266784934,K00075 UDP-N-acetylmuramate dehydrogenase [EC:1.3.1.98] | (RefSeq) murB; UDP-N-acetylenolpyruvoylglu-2,735568,TGG,-,30
+AAGACCGTCAAAGAAAAATT,0.007885,Streptococcus mitis B6,0.266784934,K00075 UDP-N-acetylmuramate dehydrogenase [EC:1.3.1.98] | (RefSeq) murB; UDP-N-acetylenolpyruvoylglu-2,735568,TGG,-,30
+AAGACCGTCAAAGAAAAATT,0.023736,Streptococcus mitis B6,0.266784934,K00075 UDP-N-acetylmuramate dehydrogenase [EC:1.3.1.98] | (RefSeq) murB; UDP-N-acetylenolpyruvoylglu-2,735568,TGG,-,30
+TCTTTTGTACATAATGAATA,0.00886,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00075 UDP-N-acetylmuramate dehydrogenase [EC:1.3.1.98] | (RefSeq) murB; UDP-N-acetylenolpyruvoylglu-3,735605,AGG,+,36
+TCTTTTGTACATAATGAATA,0.021363,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00075 UDP-N-acetylmuramate dehydrogenase [EC:1.3.1.98] | (RefSeq) murB; UDP-N-acetylenolpyruvoylglu-3,735605,AGG,+,36
+AACCAAACACGCTGGTTTTA,0.102485,Acinetobacter johnsonii XBB1,0.394377729,K00075 UDP-N-acetylmuramate dehydrogenase [EC:1.3.1.98] | (RefSeq) murB; UDP-N-acetylenolpyruvoylglu-4,735647,TGG,-,37
+AACCAAACACGCTGGTTTTA,0.110243,Corynebacterium striatum strain 216 chromosome,0.492085153,K00075 UDP-N-acetylmuramate dehydrogenase [EC:1.3.1.98] | (RefSeq) murB; UDP-N-acetylenolpyruvoylglu-4,735647,TGG,-,37
+AACCAAACACGCTGGTTTTA,0.033454,Streptococcus mitis B6,0.266784934,K00075 UDP-N-acetylmuramate dehydrogenase [EC:1.3.1.98] | (RefSeq) murB; UDP-N-acetylenolpyruvoylglu-4,735647,TGG,-,37
+TACCATAAAACCAGCGTGTT,0.014453,Micrococcus luteus NCTC 2665,0.542439956,K00075 UDP-N-acetylmuramate dehydrogenase [EC:1.3.1.98] | (RefSeq) murB; UDP-N-acetylenolpyruvoylglu-5,735663,TGG,+,39
+CTGTTCTCTTAATAAAACGA,0.028077,Acinetobacter johnsonii XBB1,0.394377729,K03647 protein involved in ribonucleotide reduction | (RefSeq) nrdI; ribonucleotide reductase stimul-1,726817,CGG,-,35
+ATAATAAACGGTTCATGAAC,0.058674,Acinetobacter johnsonii XBB1,0.394377729,K03647 protein involved in ribonucleotide reduction | (RefSeq) nrdI; ribonucleotide reductase stimul-2,726884,TGG,-,40
+ATTATCGTTACTGGCACTAT,0.193811,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03647 protein involved in ribonucleotide reduction | (RefSeq) nrdI; ribonucleotide reductase stimul-3,726920,TGG,+,39
+ATTATCGTTACTGGCACTAT,0.038819,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03647 protein involved in ribonucleotide reduction | (RefSeq) nrdI; ribonucleotide reductase stimul-3,726920,TGG,+,39
+AAAAAAGATTGAACGGGTTC,0.037458,Micrococcus luteus NCTC 2665,0.542439956,K03647 protein involved in ribonucleotide reduction | (RefSeq) nrdI; ribonucleotide reductase stimul-4,726938,TGG,-,35
+AAAAAAGATTGAACGGGTTC,0.20695,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03647 protein involved in ribonucleotide reduction | (RefSeq) nrdI; ribonucleotide reductase stimul-4,726938,TGG,-,35
+ACTTCTAAAAAAGATTGAAC,0.123856,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03647 protein involved in ribonucleotide reduction | (RefSeq) nrdI; ribonucleotide reductase stimul-5,726944,GGG,-,33
+ACTTCTAAAAAAGATTGAAC,0.047973,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03647 protein involved in ribonucleotide reduction | (RefSeq) nrdI; ribonucleotide reductase stimul-5,726944,GGG,-,33
+ACTTCTAAAAAAGATTGAAC,0.023011,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03647 protein involved in ribonucleotide reduction | (RefSeq) nrdI; ribonucleotide reductase stimul-5,726944,GGG,-,33
+ACTTCTAAAAAAGATTGAAC,0.012774,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03647 protein involved in ribonucleotide reduction | (RefSeq) nrdI; ribonucleotide reductase stimul-5,726944,GGG,-,33
+ACTTCTAAAAAAGATTGAAC,0.009363,Streptococcus mitis B6,0.266784934,K03647 protein involved in ribonucleotide reduction | (RefSeq) nrdI; ribonucleotide reductase stimul-5,726944,GGG,-,33
+ACTTCTAAAAAAGATTGAAC,0.080327,Streptococcus mitis B6,0.266784934,K03647 protein involved in ribonucleotide reduction | (RefSeq) nrdI; ribonucleotide reductase stimul-5,726944,GGG,-,33
+GGTATTCTAGCTGGAGGTAT,0.076804,Acinetobacter johnsonii XBB1,0.394377729,K21030 D-ribitol-5-phosphate cytidylyltransferase [EC:2.7.7.40] | (RefSeq) ispD; 2-C-methyl-D-erythr-1,245281,AGG,+,43
+GGTATTCTAGCTGGAGGTAT,0.070992,Acinetobacter johnsonii XBB1,0.394377729,K21030 D-ribitol-5-phosphate cytidylyltransferase [EC:2.7.7.40] | (RefSeq) ispD; 2-C-methyl-D-erythr-1,245281,AGG,+,43
+GGTATTCTAGCTGGAGGTAT,0.068355,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K21030 D-ribitol-5-phosphate cytidylyltransferase [EC:2.7.7.40] | (RefSeq) ispD; 2-C-methyl-D-erythr-1,245281,AGG,+,43
+GGTATTCTAGCTGGAGGTAT,0.029925,Streptococcus mitis B6,0.266784934,K21030 D-ribitol-5-phosphate cytidylyltransferase [EC:2.7.7.40] | (RefSeq) ispD; 2-C-methyl-D-erythr-1,245281,AGG,+,43
+TCTAATGTATGGATTAAAAT,0.03802,Acinetobacter johnsonii XBB1,0.394377729,K21030 D-ribitol-5-phosphate cytidylyltransferase [EC:2.7.7.40] | (RefSeq) ispD; 2-C-methyl-D-erythr-2,245341,CGG,-,32
+TCTAATGTATGGATTAAAAT,0.022668,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K21030 D-ribitol-5-phosphate cytidylyltransferase [EC:2.7.7.40] | (RefSeq) ispD; 2-C-methyl-D-erythr-2,245341,CGG,-,32
+TCTAATGTATGGATTAAAAT,0.009689,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K21030 D-ribitol-5-phosphate cytidylyltransferase [EC:2.7.7.40] | (RefSeq) ispD; 2-C-methyl-D-erythr-2,245341,CGG,-,32
+TCTAATGTATGGATTAAAAT,0.024405,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K21030 D-ribitol-5-phosphate cytidylyltransferase [EC:2.7.7.40] | (RefSeq) ispD; 2-C-methyl-D-erythr-2,245341,CGG,-,32
+TCTAATGTATGGATTAAAAT,0.026401,Streptococcus mitis B6,0.266784934,K21030 D-ribitol-5-phosphate cytidylyltransferase [EC:2.7.7.40] | (RefSeq) ispD; 2-C-methyl-D-erythr-2,245341,CGG,-,32
+TCTAATGTATGGATTAAAAT,0.04637,Streptococcus mitis B6,0.266784934,K21030 D-ribitol-5-phosphate cytidylyltransferase [EC:2.7.7.40] | (RefSeq) ispD; 2-C-methyl-D-erythr-2,245341,CGG,-,32
+GTATGCGTCATCCATTGTTG,0.038871,Propionibacterium acnes ATCC 11828,0.569050218,K21030 D-ribitol-5-phosphate cytidylyltransferase [EC:2.7.7.40] | (RefSeq) ispD; 2-C-methyl-D-erythr-3,245410,TGG,-,31
+GAAAGAATTGAAGTCATTCA,0.057607,Acinetobacter johnsonii XBB1,0.394377729,K21030 D-ribitol-5-phosphate cytidylyltransferase [EC:2.7.7.40] | (RefSeq) ispD; 2-C-methyl-D-erythr-4,245485,AGG,+,38
+GAAAGAATTGAAGTCATTCA,0.050514,Acinetobacter johnsonii XBB1,0.394377729,K21030 D-ribitol-5-phosphate cytidylyltransferase [EC:2.7.7.40] | (RefSeq) ispD; 2-C-methyl-D-erythr-4,245485,AGG,+,38
+GAAAGAATTGAAGTCATTCA,0.087104,Acinetobacter johnsonii XBB1,0.394377729,K21030 D-ribitol-5-phosphate cytidylyltransferase [EC:2.7.7.40] | (RefSeq) ispD; 2-C-methyl-D-erythr-4,245485,AGG,+,38
+GAAAGAATTGAAGTCATTCA,0.017152,Acinetobacter johnsonii XBB1,0.394377729,K21030 D-ribitol-5-phosphate cytidylyltransferase [EC:2.7.7.40] | (RefSeq) ispD; 2-C-methyl-D-erythr-4,245485,AGG,+,38
+GAAAGAATTGAAGTCATTCA,0.037004,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K21030 D-ribitol-5-phosphate cytidylyltransferase [EC:2.7.7.40] | (RefSeq) ispD; 2-C-methyl-D-erythr-4,245485,AGG,+,38
+GAAAGAATTGAAGTCATTCA,0.239503,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K21030 D-ribitol-5-phosphate cytidylyltransferase [EC:2.7.7.40] | (RefSeq) ispD; 2-C-methyl-D-erythr-4,245485,AGG,+,38
+GAAAGAATTGAAGTCATTCA,0.348167,Streptococcus mitis B6,0.266784934,K21030 D-ribitol-5-phosphate cytidylyltransferase [EC:2.7.7.40] | (RefSeq) ispD; 2-C-methyl-D-erythr-4,245485,AGG,+,38
+AGAATTGAAGTCATTCAAGG,0.014586,Acinetobacter johnsonii XBB1,0.394377729,K21030 D-ribitol-5-phosphate cytidylyltransferase [EC:2.7.7.40] | (RefSeq) ispD; 2-C-methyl-D-erythr-5,245488,TGG,+,34
+AGAATTGAAGTCATTCAAGG,0.020236,Acinetobacter johnsonii XBB1,0.394377729,K21030 D-ribitol-5-phosphate cytidylyltransferase [EC:2.7.7.40] | (RefSeq) ispD; 2-C-methyl-D-erythr-5,245488,TGG,+,34
+AGAATTGAAGTCATTCAAGG,0.053887,Corynebacterium striatum strain 216 chromosome,0.492085153,K21030 D-ribitol-5-phosphate cytidylyltransferase [EC:2.7.7.40] | (RefSeq) ispD; 2-C-methyl-D-erythr-5,245488,TGG,+,34
+AGAATTGAAGTCATTCAAGG,0.038189,Propionibacterium acnes ATCC 11828,0.569050218,K21030 D-ribitol-5-phosphate cytidylyltransferase [EC:2.7.7.40] | (RefSeq) ispD; 2-C-methyl-D-erythr-5,245488,TGG,+,34
+AGAATTGAAGTCATTCAAGG,0.021008,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K21030 D-ribitol-5-phosphate cytidylyltransferase [EC:2.7.7.40] | (RefSeq) ispD; 2-C-methyl-D-erythr-5,245488,TGG,+,34
+AGAATTGAAGTCATTCAAGG,0.055347,Streptococcus mitis B6,0.266784934,K21030 D-ribitol-5-phosphate cytidylyltransferase [EC:2.7.7.40] | (RefSeq) ispD; 2-C-methyl-D-erythr-5,245488,TGG,+,34
+AATAAAGCACTAGCTGTTAC,0.039177,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-1,1875277,CGG,-,41
+GCTTTATTATTAGGCGCTTG,0.083978,Acinetobacter johnsonii XBB1,0.394377729,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-2,1875310,TGG,+,38
+GCTTTATTATTAGGCGCTTG,0.054646,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-2,1875310,TGG,+,38
+GCTTTATTATTAGGCGCTTG,0.034219,Streptococcus mitis B6,0.266784934,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-2,1875310,TGG,+,38
+GCTTTATTATTAGGCGCTTG,0.011215,Streptococcus mitis B6,0.266784934,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-2,1875310,TGG,+,38
+ACATTAATTTCTTCTAAAGC,0.008717,Acinetobacter johnsonii XBB1,0.394377729,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-3,1875361,TGG,+,35
+ACATTAATTTCTTCTAAAGC,0.011972,Acinetobacter johnsonii XBB1,0.394377729,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-3,1875361,TGG,+,35
+ACATTAATTTCTTCTAAAGC,0.025462,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-3,1875361,TGG,+,35
+ACATTAATTTCTTCTAAAGC,0.068455,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-3,1875361,TGG,+,35
+ACATTAATTTCTTCTAAAGC,0.041705,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-3,1875361,TGG,+,35
+ACATTAATTTCTTCTAAAGC,0.062441,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-3,1875361,TGG,+,35
+ACATTAATTTCTTCTAAAGC,0.077064,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-3,1875361,TGG,+,35
+ACATTAATTTCTTCTAAAGC,0.020612,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-3,1875361,TGG,+,35
+ACATTAATTTCTTCTAAAGC,0.044477,Streptococcus mitis B6,0.266784934,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-3,1875361,TGG,+,35
+ACATTAATTTCTTCTAAAGC,0.018558,Streptococcus mitis B6,0.266784934,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-3,1875361,TGG,+,35
+GCAGATACAATGAAAAAAAT,0.015998,Acinetobacter johnsonii XBB1,0.394377729,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-4,1875397,CGG,+,30
+GCAGATACAATGAAAAAAAT,0.008274,Acinetobacter johnsonii XBB1,0.394377729,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-4,1875397,CGG,+,30
+GCAGATACAATGAAAAAAAT,0.027409,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-4,1875397,CGG,+,30
+GCAGATACAATGAAAAAAAT,0.02423,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-4,1875397,CGG,+,30
+GCAGATACAATGAAAAAAAT,0.024633,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-4,1875397,CGG,+,30
+GCAGATACAATGAAAAAAAT,0.054494,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-4,1875397,CGG,+,30
+GCAGATACAATGAAAAAAAT,0.040129,Streptococcus mitis B6,0.266784934,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-4,1875397,CGG,+,30
+GCAGATACAATGAAAAAAAT,0.014178,Streptococcus mitis B6,0.266784934,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-4,1875397,CGG,+,30
+GCAGATACAATGAAAAAAAT,0.009858,Streptococcus mitis B6,0.266784934,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-4,1875397,CGG,+,30
+GAAAAAATGCAAAAGCAATA,0.047974,Acinetobacter johnsonii XBB1,0.394377729,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-5,1875523,CGG,+,38
+GAAAAAATGCAAAAGCAATA,0.070114,Acinetobacter johnsonii XBB1,0.394377729,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-5,1875523,CGG,+,38
+GAAAAAATGCAAAAGCAATA,0.110245,Acinetobacter johnsonii XBB1,0.394377729,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-5,1875523,CGG,+,38
+GAAAAAATGCAAAAGCAATA,0.013238,Corynebacterium striatum strain 216 chromosome,0.492085153,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-5,1875523,CGG,+,38
+GAAAAAATGCAAAAGCAATA,0.044233,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-5,1875523,CGG,+,38
+GAAAAAATGCAAAAGCAATA,0.076282,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-5,1875523,CGG,+,38
+GAAAAAATGCAAAAGCAATA,0.005251,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-5,1875523,CGG,+,38
+GAAAAAATGCAAAAGCAATA,0.038996,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-5,1875523,CGG,+,38
+GAAAAAATGCAAAAGCAATA,0.042114,Streptococcus mitis B6,0.266784934,K07533 foldase protein PrsA [EC:5.2.1.8] | (RefSeq) protein export protein PrsA-5,1875523,CGG,+,38
+AATCAACGTACGTTTAACAT,0.024126,Acinetobacter johnsonii XBB1,0.394377729,K00784 ribonuclease Z [EC:3.1.26.11] | (RefSeq) AtsA/ElaC family protein-1,1522454,TGG,+,32
+AATCAACGTACGTTTAACAT,0.024108,Acinetobacter johnsonii XBB1,0.394377729,K00784 ribonuclease Z [EC:3.1.26.11] | (RefSeq) AtsA/ElaC family protein-1,1522454,TGG,+,32
+AATCAACGTACGTTTAACAT,0.00602,Streptococcus mitis B6,0.266784934,K00784 ribonuclease Z [EC:3.1.26.11] | (RefSeq) AtsA/ElaC family protein-1,1522454,TGG,+,32
+ATGCAAATACGTCTTCAATA,0.03188,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00784 ribonuclease Z [EC:3.1.26.11] | (RefSeq) AtsA/ElaC family protein-2,1522489,TGG,+,39
+ATGCAAATACGTCTTCAATA,0.036361,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00784 ribonuclease Z [EC:3.1.26.11] | (RefSeq) AtsA/ElaC family protein-2,1522489,TGG,+,39
+ATGGCTATGATGATAATTGT,0.051693,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00784 ribonuclease Z [EC:3.1.26.11] | (RefSeq) AtsA/ElaC family protein-3,1522508,TGG,+,46
+CATGAAGCGACCTATATAGA,0.043974,Acinetobacter johnsonii XBB1,0.394377729,K00784 ribonuclease Z [EC:3.1.26.11] | (RefSeq) AtsA/ElaC family protein-4,1522527,TGG,-,40
+TTCTAGAGATGCTGATGTGA,0.01581,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00784 ribonuclease Z [EC:3.1.26.11] | (RefSeq) AtsA/ElaC family protein-5,1522552,TGG,-,41
+TATCAAGGAGGTGCACATCG,0.070079,Acinetobacter johnsonii XBB1,0.394377729,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-1,518657,TGG,+,44
+TATCAAGGAGGTGCACATCG,0.023481,Corynebacterium striatum strain 216 chromosome,0.492085153,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-1,518657,TGG,+,44
+TATCAAGGAGGTGCACATCG,0.134899,Corynebacterium striatum strain 216 chromosome,0.492085153,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-1,518657,TGG,+,44
+TATCAAGGAGGTGCACATCG,0.135687,Corynebacterium striatum strain 216 chromosome,0.492085153,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-1,518657,TGG,+,44
+TATCAAGGAGGTGCACATCG,0.019658,Corynebacterium striatum strain 216 chromosome,0.492085153,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-1,518657,TGG,+,44
+TATCAAGGAGGTGCACATCG,0.043934,Corynebacterium striatum strain 216 chromosome,0.492085153,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-1,518657,TGG,+,44
+TATCAAGGAGGTGCACATCG,0.01534,Micrococcus luteus NCTC 2665,0.542439956,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-1,518657,TGG,+,44
+TATCAAGGAGGTGCACATCG,0.065436,Micrococcus luteus NCTC 2665,0.542439956,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-1,518657,TGG,+,44
+TATCAAGGAGGTGCACATCG,0.020521,Micrococcus luteus NCTC 2665,0.542439956,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-1,518657,TGG,+,44
+TATCAAGGAGGTGCACATCG,0.036349,Propionibacterium acnes ATCC 11828,0.569050218,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-1,518657,TGG,+,44
+TATCAAGGAGGTGCACATCG,0.046779,Propionibacterium acnes ATCC 11828,0.569050218,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-1,518657,TGG,+,44
+GCTGGATTCGCTTTACCTGC,0.021958,Acinetobacter johnsonii XBB1,0.394377729,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-2,518697,AGG,-,36
+GCTGGATTCGCTTTACCTGC,0.133705,Acinetobacter johnsonii XBB1,0.394377729,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-2,518697,AGG,-,36
+GCTGGATTCGCTTTACCTGC,0.149153,Corynebacterium striatum strain 216 chromosome,0.492085153,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-2,518697,AGG,-,36
+GCTGGATTCGCTTTACCTGC,0.041,Micrococcus luteus NCTC 2665,0.542439956,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-2,518697,AGG,-,36
+GCTGGACCAACTGGTGGTGC,0.093936,Acinetobacter johnsonii XBB1,0.394377729,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-3,518715,TGG,-,50
+GCTGGACCAACTGGTGGTGC,0.052597,Acinetobacter johnsonii XBB1,0.394377729,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-3,518715,TGG,-,50
+GCTGGACCAACTGGTGGTGC,0.102396,Acinetobacter johnsonii XBB1,0.394377729,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-3,518715,TGG,-,50
+GCTGGACCAACTGGTGGTGC,0.171409,Corynebacterium striatum strain 216 chromosome,0.492085153,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-3,518715,TGG,-,50
+GCTGGACCAACTGGTGGTGC,0.10815,Corynebacterium striatum strain 216 chromosome,0.492085153,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-3,518715,TGG,-,50
+GCTGGACCAACTGGTGGTGC,0.102671,Corynebacterium striatum strain 216 chromosome,0.492085153,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-3,518715,TGG,-,50
+GCTGGACCAACTGGTGGTGC,0.151973,Corynebacterium striatum strain 216 chromosome,0.492085153,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-3,518715,TGG,-,50
+GCTGGACCAACTGGTGGTGC,0.2496,Micrococcus luteus NCTC 2665,0.542439956,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-3,518715,TGG,-,50
+GCTGGACCAACTGGTGGTGC,0.389653,Micrococcus luteus NCTC 2665,0.542439956,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-3,518715,TGG,-,50
+GCTGGACCAACTGGTGGTGC,0.451606,Micrococcus luteus NCTC 2665,0.542439956,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-3,518715,TGG,-,50
+GCTGGACCAACTGGTGGTGC,0.040447,Micrococcus luteus NCTC 2665,0.542439956,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-3,518715,TGG,-,50
+GCTGGACCAACTGGTGGTGC,0.024732,Micrococcus luteus NCTC 2665,0.542439956,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-3,518715,TGG,-,50
+GCTGGACCAACTGGTGGTGC,0.07072,Micrococcus luteus NCTC 2665,0.542439956,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-3,518715,TGG,-,50
+GCTGGACCAACTGGTGGTGC,0.071585,Micrococcus luteus NCTC 2665,0.542439956,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-3,518715,TGG,-,50
+GCTGGACCAACTGGTGGTGC,0.03645,Micrococcus luteus NCTC 2665,0.542439956,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-3,518715,TGG,-,50
+GCTGGACCAACTGGTGGTGC,0.039575,Micrococcus luteus NCTC 2665,0.542439956,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-3,518715,TGG,-,50
+GCTGGACCAACTGGTGGTGC,0.173122,Micrococcus luteus NCTC 2665,0.542439956,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-3,518715,TGG,-,50
+GCTGGACCAACTGGTGGTGC,0.070424,Micrococcus luteus NCTC 2665,0.542439956,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-3,518715,TGG,-,50
+GCTGGACCAACTGGTGGTGC,0.101223,Micrococcus luteus NCTC 2665,0.542439956,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-3,518715,TGG,-,50
+GCTGGACCAACTGGTGGTGC,0.133972,Micrococcus luteus NCTC 2665,0.542439956,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-3,518715,TGG,-,50
+GCTGGACCAACTGGTGGTGC,0.017346,Propionibacterium acnes ATCC 11828,0.569050218,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-3,518715,TGG,-,50
+GCTGGACCAACTGGTGGTGC,0.029639,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-3,518715,TGG,-,50
+GCTGGACCAACTGGTGGTGC,0.039717,Streptococcus mitis B6,0.266784934,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-3,518715,TGG,-,50
+CCACCAGTTGGTCCAGCATT,0.059002,Acinetobacter johnsonii XBB1,0.394377729,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-4,518739,AGG,+,46
+CCACCAGTTGGTCCAGCATT,0.031875,Acinetobacter johnsonii XBB1,0.394377729,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-4,518739,AGG,+,46
+CCACCAGTTGGTCCAGCATT,0.17474,Acinetobacter johnsonii XBB1,0.394377729,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-4,518739,AGG,+,46
+CCACCAGTTGGTCCAGCATT,0.05017,Corynebacterium striatum strain 216 chromosome,0.492085153,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-4,518739,AGG,+,46
+CCACCAGTTGGTCCAGCATT,0.200481,Corynebacterium striatum strain 216 chromosome,0.492085153,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-4,518739,AGG,+,46
+CCACCAGTTGGTCCAGCATT,0.050721,Corynebacterium striatum strain 216 chromosome,0.492085153,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-4,518739,AGG,+,46
+TCAAGCAGGTGTGAACATCA,0.039389,Acinetobacter johnsonii XBB1,0.394377729,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-5,518762,TGG,+,42
+TCAAGCAGGTGTGAACATCA,0.011828,Acinetobacter johnsonii XBB1,0.394377729,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-5,518762,TGG,+,42
+TCAAGCAGGTGTGAACATCA,0.051433,Acinetobacter johnsonii XBB1,0.394377729,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-5,518762,TGG,+,42
+TCAAGCAGGTGTGAACATCA,0.039671,Propionibacterium acnes ATCC 11828,0.569050218,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-5,518762,TGG,+,42
+TCAAGCAGGTGTGAACATCA,0.512111,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-5,518762,TGG,+,42
+TCAAGCAGGTGTGAACATCA,0.263576,Streptococcus mitis B6,0.266784934,K02867 large subunit ribosomal protein L11 | (RefSeq) rplK; 50S ribosomal protein L11-5,518762,TGG,+,42
+TTTTGAGGGGTGAATCTGTT,0,,,K03043 DNA-directed RNA polymerase subunit beta [EC:2.7.7.6] | (RefSeq) rpoB; DNA-directed RNA polym-1,522160,TGG,+,44
+GCAGGTCAAGTTGTCCAATA,0.169184,Acinetobacter johnsonii XBB1,0.394377729,K03043 DNA-directed RNA polymerase subunit beta [EC:2.7.7.6] | (RefSeq) rpoB; DNA-directed RNA polym-2,522182,TGG,+,36
+GCAGGTCAAGTTGTCCAATA,0.008361,Propionibacterium acnes ATCC 11828,0.569050218,K03043 DNA-directed RNA polymerase subunit beta [EC:2.7.7.6] | (RefSeq) rpoB; DNA-directed RNA polym-2,522182,TGG,+,36
+GCAGGTCAAGTTGTCCAATA,0.03331,Propionibacterium acnes ATCC 11828,0.569050218,K03043 DNA-directed RNA polymerase subunit beta [EC:2.7.7.6] | (RefSeq) rpoB; DNA-directed RNA polym-2,522182,TGG,+,36
+GCAGGTCAAGTTGTCCAATA,0.32,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03043 DNA-directed RNA polymerase subunit beta [EC:2.7.7.6] | (RefSeq) rpoB; DNA-directed RNA polym-2,522182,TGG,+,36
+GCAGGTCAAGTTGTCCAATA,0.031799,Streptococcus mitis B6,0.266784934,K03043 DNA-directed RNA polymerase subunit beta [EC:2.7.7.6] | (RefSeq) rpoB; DNA-directed RNA polym-2,522182,TGG,+,36
+GTTTGAATTTCTATTAAGTT,0.011613,Acinetobacter johnsonii XBB1,0.394377729,K03043 DNA-directed RNA polymerase subunit beta [EC:2.7.7.6] | (RefSeq) rpoB; DNA-directed RNA polym-3,522239,TGG,-,34
+GTTTGAATTTCTATTAAGTT,0.065819,Micrococcus luteus NCTC 2665,0.542439956,K03043 DNA-directed RNA polymerase subunit beta [EC:2.7.7.6] | (RefSeq) rpoB; DNA-directed RNA polym-3,522239,TGG,-,34
+GTTTGAATTTCTATTAAGTT,0.04894,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03043 DNA-directed RNA polymerase subunit beta [EC:2.7.7.6] | (RefSeq) rpoB; DNA-directed RNA polym-3,522239,TGG,-,34
+GTTTGAATTTCTATTAAGTT,0.008069,Streptococcus mitis B6,0.266784934,K03043 DNA-directed RNA polymerase subunit beta [EC:2.7.7.6] | (RefSeq) rpoB; DNA-directed RNA polym-3,522239,TGG,-,34
+GTTTGAATTTCTATTAAGTT,0.099138,Streptococcus mitis B6,0.266784934,K03043 DNA-directed RNA polymerase subunit beta [EC:2.7.7.6] | (RefSeq) rpoB; DNA-directed RNA polym-3,522239,TGG,-,34
+TACGAGTGGTTCCTAAGAGA,0,,,K03043 DNA-directed RNA polymerase subunit beta [EC:2.7.7.6] | (RefSeq) rpoB; DNA-directed RNA polym-4,522287,AGG,+,42
+TTACCAGTAAAATCTTCAAT,0.183223,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03043 DNA-directed RNA polymerase subunit beta [EC:2.7.7.6] | (RefSeq) rpoB; DNA-directed RNA polym-5,522320,TGG,-,32
+TTACCAGTAAAATCTTCAAT,0.027843,Streptococcus mitis B6,0.266784934,K03043 DNA-directed RNA polymerase subunit beta [EC:2.7.7.6] | (RefSeq) rpoB; DNA-directed RNA polym-5,522320,TGG,-,32
+TTACCAGTAAAATCTTCAAT,0.033651,Streptococcus mitis B6,0.266784934,K03043 DNA-directed RNA polymerase subunit beta [EC:2.7.7.6] | (RefSeq) rpoB; DNA-directed RNA polym-5,522320,TGG,-,32
+AGCTAAAGGAGCGAACGAAA,0.07739,Propionibacterium acnes ATCC 11828,0.569050218,K03070 preprotein translocase subunit SecA [EC:7.4.2.8] | (RefSeq) secA; preprotein translocase subu-1,749940,TGG,+,38
+AATAAAGAAATTAAACAGTT,0.046434,Acinetobacter johnsonii XBB1,0.394377729,K03070 preprotein translocase subunit SecA [EC:7.4.2.8] | (RefSeq) secA; preprotein translocase subu-2,749992,AGG,+,31
+AATAAAGAAATTAAACAGTT,0.042078,Acinetobacter johnsonii XBB1,0.394377729,K03070 preprotein translocase subunit SecA [EC:7.4.2.8] | (RefSeq) secA; preprotein translocase subu-2,749992,AGG,+,31
+AATAAAGAAATTAAACAGTT,0.026686,Corynebacterium striatum strain 216 chromosome,0.492085153,K03070 preprotein translocase subunit SecA [EC:7.4.2.8] | (RefSeq) secA; preprotein translocase subu-2,749992,AGG,+,31
+AATAAAGAAATTAAACAGTT,0.098377,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03070 preprotein translocase subunit SecA [EC:7.4.2.8] | (RefSeq) secA; preprotein translocase subu-2,749992,AGG,+,31
+AATAAAGAAATTAAACAGTT,0.056833,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03070 preprotein translocase subunit SecA [EC:7.4.2.8] | (RefSeq) secA; preprotein translocase subu-2,749992,AGG,+,31
+AATAAAGAAATTAAACAGTT,0.043769,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03070 preprotein translocase subunit SecA [EC:7.4.2.8] | (RefSeq) secA; preprotein translocase subu-2,749992,AGG,+,31
+AATAAAGAAATTAAACAGTT,0.01855,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03070 preprotein translocase subunit SecA [EC:7.4.2.8] | (RefSeq) secA; preprotein translocase subu-2,749992,AGG,+,31
+AATAAAGAAATTAAACAGTT,0.045293,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03070 preprotein translocase subunit SecA [EC:7.4.2.8] | (RefSeq) secA; preprotein translocase subu-2,749992,AGG,+,31
+AATCGCTTTAGAAGAAAAAA,0.07685,Acinetobacter johnsonii XBB1,0.394377729,K03070 preprotein translocase subunit SecA [EC:7.4.2.8] | (RefSeq) secA; preprotein translocase subu-3,750033,CGG,+,33
+AATCGCTTTAGAAGAAAAAA,0.015952,Acinetobacter johnsonii XBB1,0.394377729,K03070 preprotein translocase subunit SecA [EC:7.4.2.8] | (RefSeq) secA; preprotein translocase subu-3,750033,CGG,+,33
+AATCGCTTTAGAAGAAAAAA,0.011849,Streptococcus mitis B6,0.266784934,K03070 preprotein translocase subunit SecA [EC:7.4.2.8] | (RefSeq) secA; preprotein translocase subu-3,750033,CGG,+,33
+AATCGCTTTAGAAGAAAAAA,0.007818,Streptococcus mitis B6,0.266784934,K03070 preprotein translocase subunit SecA [EC:7.4.2.8] | (RefSeq) secA; preprotein translocase subu-3,750033,CGG,+,33
+CAATGTCAGCTAATTCTGTT,0.053424,Acinetobacter johnsonii XBB1,0.394377729,K03070 preprotein translocase subunit SecA [EC:7.4.2.8] | (RefSeq) secA; preprotein translocase subu-4,750081,TGG,-,44
+CAATGTCAGCTAATTCTGTT,0.04868,Propionibacterium acnes ATCC 11828,0.569050218,K03070 preprotein translocase subunit SecA [EC:7.4.2.8] | (RefSeq) secA; preprotein translocase subu-4,750081,TGG,-,44
+CTAACAAGTGCATATGCTTC,0.02906,Acinetobacter johnsonii XBB1,0.394377729,K03070 preprotein translocase subunit SecA [EC:7.4.2.8] | (RefSeq) secA; preprotein translocase subu-5,750145,TGG,-,36
+CTAACAAGTGCATATGCTTC,0.027596,Acinetobacter johnsonii XBB1,0.394377729,K03070 preprotein translocase subunit SecA [EC:7.4.2.8] | (RefSeq) secA; preprotein translocase subu-5,750145,TGG,-,36
+CTAACAAGTGCATATGCTTC,0.016671,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03070 preprotein translocase subunit SecA [EC:7.4.2.8] | (RefSeq) secA; preprotein translocase subu-5,750145,TGG,-,36
+CTAACAAGTGCATATGCTTC,0.012392,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03070 preprotein translocase subunit SecA [EC:7.4.2.8] | (RefSeq) secA; preprotein translocase subu-5,750145,TGG,-,36
+CTAACAAGTGCATATGCTTC,0.060881,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K03070 preprotein translocase subunit SecA [EC:7.4.2.8] | (RefSeq) secA; preprotein translocase subu-5,750145,TGG,-,36
+ATTTTGCTCTTAACTGTGTC,0.210412,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K01875 seryl-tRNA synthetase [EC:6.1.1.11] | (RefSeq) seryl-tRNA synthetase-1,12817,AGG,-,41
+AAGAGCAAAATTGAATTACG,0.05663,Acinetobacter johnsonii XBB1,0.394377729,K01875 seryl-tRNA synthetase [EC:6.1.1.11] | (RefSeq) seryl-tRNA synthetase-2,12847,TGG,+,31
+AAGAGCAAAATTGAATTACG,0.232572,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K01875 seryl-tRNA synthetase [EC:6.1.1.11] | (RefSeq) seryl-tRNA synthetase-2,12847,TGG,+,31
+ATTGCTGAAATGCGCACATT,0,,,K01875 seryl-tRNA synthetase [EC:6.1.1.11] | (RefSeq) seryl-tRNA synthetase-3,13021,AGG,+,39
+TTAAATTTGGAATACGACAA,0,,,K01875 seryl-tRNA synthetase [EC:6.1.1.11] | (RefSeq) seryl-tRNA synthetase-4,13086,AGG,-,37
+TCTTCATCAGATTCACCTTG,0.03456,Acinetobacter johnsonii XBB1,0.394377729,K01875 seryl-tRNA synthetase [EC:6.1.1.11] | (RefSeq) seryl-tRNA synthetase-5,13123,AGG,-,31
+TCTTCATCAGATTCACCTTG,0.014971,Acinetobacter johnsonii XBB1,0.394377729,K01875 seryl-tRNA synthetase [EC:6.1.1.11] | (RefSeq) seryl-tRNA synthetase-5,13123,AGG,-,31
+TCTTCATCAGATTCACCTTG,0.066437,Acinetobacter johnsonii XBB1,0.394377729,K01875 seryl-tRNA synthetase [EC:6.1.1.11] | (RefSeq) seryl-tRNA synthetase-5,13123,AGG,-,31
+TCTTCATCAGATTCACCTTG,0.027795,Acinetobacter johnsonii XBB1,0.394377729,K01875 seryl-tRNA synthetase [EC:6.1.1.11] | (RefSeq) seryl-tRNA synthetase-5,13123,AGG,-,31
+TCTTCATCAGATTCACCTTG,0.006223,Corynebacterium striatum strain 216 chromosome,0.492085153,K01875 seryl-tRNA synthetase [EC:6.1.1.11] | (RefSeq) seryl-tRNA synthetase-5,13123,AGG,-,31
+TCTTCATCAGATTCACCTTG,0.048837,Corynebacterium striatum strain 216 chromosome,0.492085153,K01875 seryl-tRNA synthetase [EC:6.1.1.11] | (RefSeq) seryl-tRNA synthetase-5,13123,AGG,-,31
+TCTTCATCAGATTCACCTTG,0.042946,Propionibacterium acnes ATCC 11828,0.569050218,K01875 seryl-tRNA synthetase [EC:6.1.1.11] | (RefSeq) seryl-tRNA synthetase-5,13123,AGG,-,31
+TCTTCATCAGATTCACCTTG,0.143218,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K01875 seryl-tRNA synthetase [EC:6.1.1.11] | (RefSeq) seryl-tRNA synthetase-5,13123,AGG,-,31
+TCTTCATCAGATTCACCTTG,0.021518,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K01875 seryl-tRNA synthetase [EC:6.1.1.11] | (RefSeq) seryl-tRNA synthetase-5,13123,AGG,-,31
+TCTTCATCAGATTCACCTTG,0.02417,Streptococcus mitis B6,0.266784934,K01875 seryl-tRNA synthetase [EC:6.1.1.11] | (RefSeq) seryl-tRNA synthetase-5,13123,AGG,-,31
+TCTTCATCAGATTCACCTTG,0.026984,Streptococcus mitis B6,0.266784934,K01875 seryl-tRNA synthetase [EC:6.1.1.11] | (RefSeq) seryl-tRNA synthetase-5,13123,AGG,-,31
+AAATAAATTAGATTCTTGTT,0.017671,Acinetobacter johnsonii XBB1,0.394377729,K21591 teichoic acid glycerol-phosphate transferase [EC:2.7.8.45] | (RefSeq) teichoic acid biosynthe-1,243878,TGG,-,37
+AAATAAATTAGATTCTTGTT,0.185121,Acinetobacter johnsonii XBB1,0.394377729,K21591 teichoic acid glycerol-phosphate transferase [EC:2.7.8.45] | (RefSeq) teichoic acid biosynthe-1,243878,TGG,-,37
+AAATAAATTAGATTCTTGTT,0.036026,Acinetobacter johnsonii XBB1,0.394377729,K21591 teichoic acid glycerol-phosphate transferase [EC:2.7.8.45] | (RefSeq) teichoic acid biosynthe-1,243878,TGG,-,37
+AAATAAATTAGATTCTTGTT,0.00728,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K21591 teichoic acid glycerol-phosphate transferase [EC:2.7.8.45] | (RefSeq) teichoic acid biosynthe-1,243878,TGG,-,37
+ATTTATTTTGAAAGCTTTCA,0.068891,Acinetobacter johnsonii XBB1,0.394377729,K21591 teichoic acid glycerol-phosphate transferase [EC:2.7.8.45] | (RefSeq) teichoic acid biosynthe-2,243911,TGG,+,41
+ATTTATTTTGAAAGCTTTCA,0.101779,Acinetobacter johnsonii XBB1,0.394377729,K21591 teichoic acid glycerol-phosphate transferase [EC:2.7.8.45] | (RefSeq) teichoic acid biosynthe-2,243911,TGG,+,41
+ATTTATTTTGAAAGCTTTCA,0.036655,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K21591 teichoic acid glycerol-phosphate transferase [EC:2.7.8.45] | (RefSeq) teichoic acid biosynthe-2,243911,TGG,+,41
+ATTTATTTTGAAAGCTTTCA,0.073212,Streptococcus mitis B6,0.266784934,K21591 teichoic acid glycerol-phosphate transferase [EC:2.7.8.45] | (RefSeq) teichoic acid biosynthe-2,243911,TGG,+,41
+ATTTATTTTGAAAGCTTTCA,0.282874,Streptococcus mitis B6,0.266784934,K21591 teichoic acid glycerol-phosphate transferase [EC:2.7.8.45] | (RefSeq) teichoic acid biosynthe-2,243911,TGG,+,41
+ATTTATTTTGAAAGCTTTCA,0.056285,Streptococcus mitis B6,0.266784934,K21591 teichoic acid glycerol-phosphate transferase [EC:2.7.8.45] | (RefSeq) teichoic acid biosynthe-2,243911,TGG,+,41
+TAAGTATTCATATAATGCTT,0.076007,Acinetobacter johnsonii XBB1,0.394377729,K21591 teichoic acid glycerol-phosphate transferase [EC:2.7.8.45] | (RefSeq) teichoic acid biosynthe-3,243936,TGG,-,35
+TAAGTATTCATATAATGCTT,0.017293,Corynebacterium striatum strain 216 chromosome,0.492085153,K21591 teichoic acid glycerol-phosphate transferase [EC:2.7.8.45] | (RefSeq) teichoic acid biosynthe-3,243936,TGG,-,35
+TTAATATGGGGTGTGAAAAA,0.061619,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K21591 teichoic acid glycerol-phosphate transferase [EC:2.7.8.45] | (RefSeq) teichoic acid biosynthe-4,243998,AGG,+,44
+CATATGGTACATTGTGCTGT,0.055261,Acinetobacter johnsonii XBB1,0.394377729,K21591 teichoic acid glycerol-phosphate transferase [EC:2.7.8.45] | (RefSeq) teichoic acid biosynthe-5,244018,TGG,-,42
+CATATGGTACATTGTGCTGT,0.035512,Propionibacterium acnes ATCC 11828,0.569050218,K21591 teichoic acid glycerol-phosphate transferase [EC:2.7.8.45] | (RefSeq) teichoic acid biosynthe-5,244018,TGG,-,42
+ATAACTTTTGAGGGCCCAGA,0.035517,Acinetobacter johnsonii XBB1,0.394377729,K00943 dTMP kinase [EC:2.7.4.9] | (RefSeq) tmk; thymidylate kinase-1,456100,AGG,+,44
+ATAACTTTTGAGGGCCCAGA,0.092147,Acinetobacter johnsonii XBB1,0.394377729,K00943 dTMP kinase [EC:2.7.4.9] | (RefSeq) tmk; thymidylate kinase-1,456100,AGG,+,44
+ATAACTTTTGAGGGCCCAGA,0.08787,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00943 dTMP kinase [EC:2.7.4.9] | (RefSeq) tmk; thymidylate kinase-1,456100,AGG,+,44
+ATAACTTTTGAGGGCCCAGA,0.024392,Streptococcus mitis B6,0.266784934,K00943 dTMP kinase [EC:2.7.4.9] | (RefSeq) tmk; thymidylate kinase-1,456100,AGG,+,44
+CATAATCTTTTACTAATCTA,0.066125,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00943 dTMP kinase [EC:2.7.4.9] | (RefSeq) tmk; thymidylate kinase-2,456138,TGG,-,35
+CATAATCTTTTACTAATCTA,0.015106,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00943 dTMP kinase [EC:2.7.4.9] | (RefSeq) tmk; thymidylate kinase-2,456138,TGG,-,35
+GTCATTATGACTAGAGAACC,0.114652,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00943 dTMP kinase [EC:2.7.4.9] | (RefSeq) tmk; thymidylate kinase-3,456181,AGG,+,38
+GAACCAGGTGGTGTTCCTAC,0.06571,Acinetobacter johnsonii XBB1,0.394377729,K00943 dTMP kinase [EC:2.7.4.9] | (RefSeq) tmk; thymidylate kinase-4,456196,TGG,+,42
+GAACCAGGTGGTGTTCCTAC,0.175005,Propionibacterium acnes ATCC 11828,0.569050218,K00943 dTMP kinase [EC:2.7.4.9] | (RefSeq) tmk; thymidylate kinase-4,456196,TGG,+,42
+GAACCAGGTGGTGTTCCTAC,0.021334,Streptococcus mitis B6,0.266784934,K00943 dTMP kinase [EC:2.7.4.9] | (RefSeq) tmk; thymidylate kinase-4,456196,TGG,+,42
+ATACGTAAAATTGTATTAGA,0.076911,Acinetobacter johnsonii XBB1,0.394377729,K00943 dTMP kinase [EC:2.7.4.9] | (RefSeq) tmk; thymidylate kinase-5,456226,AGG,+,35
+ATACGTAAAATTGTATTAGA,0.045637,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00943 dTMP kinase [EC:2.7.4.9] | (RefSeq) tmk; thymidylate kinase-5,456226,AGG,+,35
+ATACGTAAAATTGTATTAGA,0.02684,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00943 dTMP kinase [EC:2.7.4.9] | (RefSeq) tmk; thymidylate kinase-5,456226,AGG,+,35
+ATACGTAAAATTGTATTAGA,0.008515,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00943 dTMP kinase [EC:2.7.4.9] | (RefSeq) tmk; thymidylate kinase-5,456226,AGG,+,35
+AGAAAAGAGGTTTATGCAAA,0.019649,Streptococcus mitis B6,0.266784934,K07668 two-component system OmpR family response regulator VicR | (RefSeq) two-component response -1,24931,TGG,+,39
+AGAAAAGAGGTTTATGCAAA,0.083616,Streptococcus mitis B6,0.266784934,K07668 two-component system OmpR family response regulator VicR | (RefSeq) two-component response -1,24931,TGG,+,39
+AATTCTAAAATATCAGCAAT,0.051486,Acinetobacter johnsonii XBB1,0.394377729,K07668 two-component system OmpR family response regulator VicR | (RefSeq) two-component response -2,24968,CGG,-,35
+AATTCTAAAATATCAGCAAT,0.0423,Acinetobacter johnsonii XBB1,0.394377729,K07668 two-component system OmpR family response regulator VicR | (RefSeq) two-component response -2,24968,CGG,-,35
+AATTCTAAAATATCAGCAAT,0.011435,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K07668 two-component system OmpR family response regulator VicR | (RefSeq) two-component response -2,24968,CGG,-,35
+AATTCTAAAATATCAGCAAT,0.054862,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K07668 two-component system OmpR family response regulator VicR | (RefSeq) two-component response -2,24968,CGG,-,35
+GAATTTAACTTAAAAAAAGA,0.012664,Acinetobacter johnsonii XBB1,0.394377729,K07668 two-component system OmpR family response regulator VicR | (RefSeq) two-component response -3,25004,AGG,+,31
+GAATTTAACTTAAAAAAAGA,0.020246,Acinetobacter johnsonii XBB1,0.394377729,K07668 two-component system OmpR family response regulator VicR | (RefSeq) two-component response -3,25004,AGG,+,31
+GAATTTAACTTAAAAAAAGA,0.024194,Acinetobacter johnsonii XBB1,0.394377729,K07668 two-component system OmpR family response regulator VicR | (RefSeq) two-component response -3,25004,AGG,+,31
+GAATTTAACTTAAAAAAAGA,0.035636,Acinetobacter johnsonii XBB1,0.394377729,K07668 two-component system OmpR family response regulator VicR | (RefSeq) two-component response -3,25004,AGG,+,31
+GAATTTAACTTAAAAAAAGA,0.099729,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K07668 two-component system OmpR family response regulator VicR | (RefSeq) two-component response -3,25004,AGG,+,31
+GAATTTAACTTAAAAAAAGA,0.095271,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K07668 two-component system OmpR family response regulator VicR | (RefSeq) two-component response -3,25004,AGG,+,31
+GAATTTAACTTAAAAAAAGA,0.028183,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K07668 two-component system OmpR family response regulator VicR | (RefSeq) two-component response -3,25004,AGG,+,31
+GAATTTAACTTAAAAAAAGA,0.017384,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K07668 two-component system OmpR family response regulator VicR | (RefSeq) two-component response -3,25004,AGG,+,31
+GAATTTAACTTAAAAAAAGA,0.051585,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K07668 two-component system OmpR family response regulator VicR | (RefSeq) two-component response -3,25004,AGG,+,31
+GAATTTAACTTAAAAAAAGA,0.023205,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K07668 two-component system OmpR family response regulator VicR | (RefSeq) two-component response -3,25004,AGG,+,31
+GAATTTAACTTAAAAAAAGA,0.021586,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K07668 two-component system OmpR family response regulator VicR | (RefSeq) two-component response -3,25004,AGG,+,31
+GAATTTAACTTAAAAAAAGA,0.065411,Streptococcus mitis B6,0.266784934,K07668 two-component system OmpR family response regulator VicR | (RefSeq) two-component response -3,25004,AGG,+,31
+GATGTGTACTGTGCATACGA,0.065395,Propionibacterium acnes ATCC 11828,0.569050218,K07668 two-component system OmpR family response regulator VicR | (RefSeq) two-component response -4,25031,TGG,+,40
+ATATCTAGTAATACGATGTC,0.022005,Corynebacterium striatum strain 216 chromosome,0.492085153,K07668 two-component system OmpR family response regulator VicR | (RefSeq) two-component response -5,25070,TGG,-,36
+ATATCTAGTAATACGATGTC,0.01448,Propionibacterium acnes ATCC 11828,0.569050218,K07668 two-component system OmpR family response regulator VicR | (RefSeq) two-component response -5,25070,TGG,-,36
+ATATCTAGTAATACGATGTC,0.01775,Streptococcus mitis B6,0.266784934,K07668 two-component system OmpR family response regulator VicR | (RefSeq) two-component response -5,25070,TGG,-,36
+ATTATCGGTGCAGGTCCAGC,0.109149,Acinetobacter johnsonii XBB1,0.394377729,K00384 thioredoxin reductase (NADPH) [EC:1.8.1.9] | (RefSeq) thioredoxin reductase-1,767000,TGG,+,42
+ATTATCGGTGCAGGTCCAGC,0.059583,Acinetobacter johnsonii XBB1,0.394377729,K00384 thioredoxin reductase (NADPH) [EC:1.8.1.9] | (RefSeq) thioredoxin reductase-1,767000,TGG,+,42
+ATTATCGGTGCAGGTCCAGC,0.048908,Acinetobacter johnsonii XBB1,0.394377729,K00384 thioredoxin reductase (NADPH) [EC:1.8.1.9] | (RefSeq) thioredoxin reductase-1,767000,TGG,+,42
+ATTATCGGTGCAGGTCCAGC,0.099258,Corynebacterium striatum strain 216 chromosome,0.492085153,K00384 thioredoxin reductase (NADPH) [EC:1.8.1.9] | (RefSeq) thioredoxin reductase-1,767000,TGG,+,42
+ATTATCGGTGCAGGTCCAGC,0.028188,Corynebacterium striatum strain 216 chromosome,0.492085153,K00384 thioredoxin reductase (NADPH) [EC:1.8.1.9] | (RefSeq) thioredoxin reductase-1,767000,TGG,+,42
+ATTATCGGTGCAGGTCCAGC,0.023842,Corynebacterium striatum strain 216 chromosome,0.492085153,K00384 thioredoxin reductase (NADPH) [EC:1.8.1.9] | (RefSeq) thioredoxin reductase-1,767000,TGG,+,42
+ATTATCGGTGCAGGTCCAGC,0.040785,Corynebacterium striatum strain 216 chromosome,0.492085153,K00384 thioredoxin reductase (NADPH) [EC:1.8.1.9] | (RefSeq) thioredoxin reductase-1,767000,TGG,+,42
+ATTATCGGTGCAGGTCCAGC,0.182531,Corynebacterium striatum strain 216 chromosome,0.492085153,K00384 thioredoxin reductase (NADPH) [EC:1.8.1.9] | (RefSeq) thioredoxin reductase-1,767000,TGG,+,42
+ATTATCGGTGCAGGTCCAGC,0.123124,Corynebacterium striatum strain 216 chromosome,0.492085153,K00384 thioredoxin reductase (NADPH) [EC:1.8.1.9] | (RefSeq) thioredoxin reductase-1,767000,TGG,+,42
+ATTATCGGTGCAGGTCCAGC,0.098731,Corynebacterium striatum strain 216 chromosome,0.492085153,K00384 thioredoxin reductase (NADPH) [EC:1.8.1.9] | (RefSeq) thioredoxin reductase-1,767000,TGG,+,42
+ATTATCGGTGCAGGTCCAGC,0.022905,Corynebacterium striatum strain 216 chromosome,0.492085153,K00384 thioredoxin reductase (NADPH) [EC:1.8.1.9] | (RefSeq) thioredoxin reductase-1,767000,TGG,+,42
+ATTATCGGTGCAGGTCCAGC,0.006166,Micrococcus luteus NCTC 2665,0.542439956,K00384 thioredoxin reductase (NADPH) [EC:1.8.1.9] | (RefSeq) thioredoxin reductase-1,767000,TGG,+,42
+ATTATCGGTGCAGGTCCAGC,0.118559,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00384 thioredoxin reductase (NADPH) [EC:1.8.1.9] | (RefSeq) thioredoxin reductase-1,767000,TGG,+,42
+ATTATCGGTGCAGGTCCAGC,0.019584,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00384 thioredoxin reductase (NADPH) [EC:1.8.1.9] | (RefSeq) thioredoxin reductase-1,767000,TGG,+,42
+ATTATCGGTGCAGGTCCAGC,0.136536,Streptococcus mitis B6,0.266784934,K00384 thioredoxin reductase (NADPH) [EC:1.8.1.9] | (RefSeq) thioredoxin reductase-1,767000,TGG,+,42
+ATTATCGGTGCAGGTCCAGC,0.045193,Streptococcus mitis B6,0.266784934,K00384 thioredoxin reductase (NADPH) [EC:1.8.1.9] | (RefSeq) thioredoxin reductase-1,767000,TGG,+,42
+ATTATCGGTGCAGGTCCAGC,0.201211,Streptococcus mitis B6,0.266784934,K00384 thioredoxin reductase (NADPH) [EC:1.8.1.9] | (RefSeq) thioredoxin reductase-1,767000,TGG,+,42
+ATTATCGGTGCAGGTCCAGC,0.167174,Streptococcus mitis B6,0.266784934,K00384 thioredoxin reductase (NADPH) [EC:1.8.1.9] | (RefSeq) thioredoxin reductase-1,767000,TGG,+,42
+ATGATTGAAAGAGGTATTCC,0.134496,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00384 thioredoxin reductase (NADPH) [EC:1.8.1.9] | (RefSeq) thioredoxin reductase-2,767069,AGG,+,46
+CTGTAATCATTTCGAAACCA,0.043424,Propionibacterium acnes ATCC 11828,0.569050218,K00384 thioredoxin reductase (NADPH) [EC:1.8.1.9] | (RefSeq) thioredoxin reductase-3,767110,GGG,-,38
+CTGTAATCATTTCGAAACCA,0.025799,Streptococcus mitis B6,0.266784934,K00384 thioredoxin reductase (NADPH) [EC:1.8.1.9] | (RefSeq) thioredoxin reductase-3,767110,GGG,-,38
+CCTGGTTTCGAAATGATTAC,0,,,K00384 thioredoxin reductase (NADPH) [EC:1.8.1.9] | (RefSeq) thioredoxin reductase-4,767129,AGG,+,42
+TTTGAACACGCTAAAAAGTT,0.029971,Acinetobacter johnsonii XBB1,0.394377729,K00384 thioredoxin reductase (NADPH) [EC:1.8.1.9] | (RefSeq) thioredoxin reductase-5,767174,TGG,+,38
+TTTGAACACGCTAAAAAGTT,0.084198,Corynebacterium striatum strain 216 chromosome,0.492085153,K00384 thioredoxin reductase (NADPH) [EC:1.8.1.9] | (RefSeq) thioredoxin reductase-5,767174,TGG,+,38
+TTTGAACACGCTAAAAAGTT,0.010134,Staphylococcus epidermidis ATCC 12228 chromosome,0.085152838,K00384 thioredoxin reductase (NADPH) [EC:1.8.1.9] | (RefSeq) thioredoxin reductase-5,767174,TGG,+,38
