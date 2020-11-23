@@ -13,7 +13,10 @@ class MyMainWindow(QtWidgets.QMainWindow):
         self.dbpath = ""
         self.crRNA_dict = {}
         self.switcher = [1,1,1,1,1,1,1]  # for keeping track of where we are in the sorting clicking for each column
-        #self.info_path = info_path
+        self.path1 = ""
+        self.path2 = ""
+        self.path3 = ""
+        self.query_dict = {}
 
         ### crRNA table settings
         self.crRNA_table.setColumnCount(7)  # hardcoded because there will always be nine columns
@@ -30,12 +33,6 @@ class MyMainWindow(QtWidgets.QMainWindow):
 #        self.actionOff_Target_Analysis.triggered.connect(self.Off_Target_Analysis)
 #        self.actionCoTargeting.triggered.connect(self.open_cotarget)
 
-
-
-
-
-
-
         ###Make sure window is centered upon start-up
         self.mwfg = self.frameGeometry()  ##Create frame geometry
         self.cp = QtWidgets.QDesktopWidget().availableGeometry().center()  ##Create center point
@@ -46,6 +43,7 @@ class MyMainWindow(QtWidgets.QMainWindow):
         self.browse_1.clicked.connect(self.get_file1)
         self.browse_2.clicked.connect(self.get_file2)
         self.browse_3.clicked.connect(self.get_file3)
+        self.run_OT.clicked.connect(self.run_mash)
         self.show()
 
     """ Start defining functions here """
@@ -61,28 +59,32 @@ class MyMainWindow(QtWidgets.QMainWindow):
         myFile = QtWidgets.QFileDialog.getOpenFileName(filed, "Choose crRNA Sequence File (.csv only)")
         if (myFile[0] != "" and '.csv' in myFile[0]):
             self.path_1.setText(myFile[0].split("/")[-1])
+            self.path1 = myFile[0]
+            self.fill_table(myFile[0])
         else:
             QtWidgets.QMessageBox.question(self, "Error!","You must select a .csv file.\n\nTry again!",QtWidgets.QMessageBox.Ok)
 
-        self.fill_table(myFile[0])
+        
 
 
     def get_file2(self):
         filed = QtWidgets.QFileDialog()
-        myFile = QtWidgets.QFileDialog.getOpenFileName(filed, "Choose crRNA Sequence File (.csv only)")
-        if (myFile[0] != "" and '.csv' in myFile[0]):
+        myFile = QtWidgets.QFileDialog.getOpenFileName(filed, "Choose Reference File (.fasta only)")
+        if (myFile[0] != "" and '.fasta' in myFile[0]):
             self.path_2.setText(myFile[0].split("/")[-1])
+            self.path2 = myFile[0]
         else:
-            QtWidgets.QMessageBox.question(self, "Error!","You must select a .csv file.\n\nTry again!",QtWidgets.QMessageBox.Ok)
+            QtWidgets.QMessageBox.question(self, "Error!","You must select a .fasta file.\n\nTry again!",QtWidgets.QMessageBox.Ok)
 
 
     def get_file3(self):
         filed = QtWidgets.QFileDialog()
-        myFile = QtWidgets.QFileDialog.getOpenFileName(filed, "Choose crRNA Sequence File (.csv only)")
-        if (myFile[0] != "" and '.csv' in myFile[0]):
+        myFile = QtWidgets.QFileDialog.getOpenFileName(filed, "Choose Query File (.fasta only)")
+        if (myFile[0] != "" and '.fasta' in myFile[0]):
             self.path_3.setText(myFile[0].split("/")[-1])
+            self.path3 = myFile[0]
         else:
-            QtWidgets.QMessageBox.question(self, "Error!","You must select a .csv file.\n\nTry again!",QtWidgets.QMessageBox.Ok)
+            QtWidgets.QMessageBox.question(self, "Error!","You must select a .fasta file.\n\nTry again!",QtWidgets.QMessageBox.Ok)
 
     def fill_table(self, input_path):
         with open(input_path, "r") as f: #Table won't populate with file open
@@ -100,8 +102,6 @@ class MyMainWindow(QtWidgets.QMainWindow):
 #                loc = item[3]
 #                pam = item[4]
 #                strand = item[5]
-#                loc.setData(QtCore.Qt.EditRole, num)
-#                score.setData(QtCore.Qt.EditRole, num1)
             ###Initilize table items
             gene = QtWidgets.QTableWidgetItem(str(item[0]))
             seq = QtWidgets.QTableWidgetItem(str(item[1]))
@@ -121,8 +121,29 @@ class MyMainWindow(QtWidgets.QMainWindow):
             self.crRNA_table.setItem(index, 6, strand)
 
         self.crRNA_table.resizeColumnsToContents()
+    
+    def run_mash(self):
+        if (self.path2 != "" and self.path3 != ""):
+            ###Set up command
+            # <exe path> dist <options> <ref seq> <query seq>
+            # Sketch size by default 10000, kmer = 16
 
+            ###Initialize variables
+            ref_file = self.path2
+            query_file = self.path3
+            self.mash_out_path = os.getcwd() + "/mash_out.txt"
+            path_to_exe = "/Users/ddooley/bioinformatics_packages/Mash/mash"
+            cmd = ""
+            flag_str = "-s 10000 -k 16 -i"
+            cmd += path_to_exe + " dist " + " " + flag_str + " " + ref_file + " " + query_file + " > " + self.mash_out_path
+            os.system(cmd) ###Run the command
+        else:
+            QtWidgets.QMessageBox.question(self, "Error!","You must select reference and query .fasta files.",QtWidgets.QMessageBox.Ok)
+###Index builder function
 
+###Off-target function
+
+###Off-target + mash output parsing function
 
 if __name__ == '__main__':
     QtWidgets.QApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling, True)
@@ -131,58 +152,3 @@ if __name__ == '__main__':
     window = MyMainWindow()
     app.setApplicationName("crRNA Viewer")
     sys.exit(app.exec_())
-
-#
-#    def getData(self):
-#        mypath = os.getcwd()
-#        found = False;
-#        self.dbpath = mypath
-#        onlyfiles = [f for f in os.listdir(mypath) if os.path.isfile(os.path.join(mypath, f))]
-#        orgsandendos = {}
-#        shortName = {}
-#        for file in onlyfiles:
-#            if file.find('.cspr') != -1:
-#                found = True
-#                newname = file[0:-4]
-#                s = newname.split('_')
-#                hold = gzip.open(file, 'r')
-#                buf = (hold.readline())
-#                buf = str(buf)
-#                buf = buf.strip("'b")
-#                buf = buf[:len(buf) - 4]
-#                species = buf[8:]
-#                endo = str(s[1][:len(s[1]) - 1])
-#                if species not in shortName:
-#                    shortName[species] = s[0]
-#                if species in orgsandendos:
-#                    orgsandendos[species].append(endo)
-#                else:
-#                    orgsandendos[species] = [endo]
-##                    if self.orgChoice.findText(species) == -1:
-#        # auto fill the kegg search bar with the first choice in orgChoice
-##        self.Search_Input.setText(self.orgChoice.currentText())
-##        if found == False:
-##            return False
-#        self.data = orgsandendos
-#        self.shortHand = shortName
-##        self.endoChoice.clear()
-##        self.endoChoice.addItems(self.data[str(self.orgChoice.currentText())])
-##        self.orgChoice.currentIndexChanged.connect(self.changeEndos)
-#        GlobalSettings.mainWindow.mwfg.moveCenter(GlobalSettings.mainWindow.cp)  ##Center window
-#        GlobalSettings.mainWindow.move(GlobalSettings.mainWindow.mwfg.topLeft())  ##Center window
-#        GlobalSettings.mainWindow.show()
-#
-#
-#    def select_ref(self):
-#        filed = QtWidgets.QFileDialog()
-#        myFile = QtWidgets.QFileDialog.getOpenFileName(filed, "Choose reference virus genome")
-#        if (myFile[0] != ""):
-#            self.refEdit.setText(myFile[0])
-#
-#    def select_anno(self):
-#        filed = QtWidgets.QFileDialog()
-#        myFile = QtWidgets.QFileDialog.getOpenFileName(filed, "Choose reference annotation")
-#        if (myFile[0] != ""):
-#            self.annoEdit.setText(myFile[0])
-#
-
