@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>832</width>
-    <height>547</height>
+    <width>1000</width>
+    <height>684</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,18 +15,158 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0" colspan="3">
+    <item row="2" column="2" rowspan="4" colspan="2">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="minimumSize">
+       <size>
+        <width>400</width>
+        <height>300</height>
+       </size>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Total crRNA View</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="1" column="0">
+         <widget class="QGraphicsView" name="total_crRNA"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Individual crRNA View</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0">
+         <widget class="QGraphicsView" name="single_crRNA"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="plot_selection">
+      <property name="text">
+       <string>Plot  Selection</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="plot_all">
+      <property name="text">
+       <string>Plot All</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2" colspan="2">
+     <widget class="QPushButton" name="clear_selection">
+      <property name="text">
+       <string>Clear Selection</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="2">
+     <widget class="QTableWidget" name="crRNA_table">
+      <property name="minimumSize">
+       <size>
+        <width>500</width>
+        <height>300</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="4">
      <widget class="QGroupBox" name="groupBox">
       <property name="maximumSize">
        <size>
         <width>10000000</width>
-        <height>16777215</height>
+        <height>250</height>
        </size>
       </property>
       <property name="title">
        <string>Step 1: Input  Data</string>
       </property>
       <layout class="QGridLayout" name="gridLayout_2">
+       <item row="5" column="2" rowspan="2">
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="minimumSize">
+          <size>
+           <width>215</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Run Off-Target</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2" colspan="4">
+        <widget class="QGroupBox" name="groupBox_1">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="title">
+          <string>Selected File:</string>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <property name="topMargin">
+           <number>1</number>
+          </property>
+          <property name="rightMargin">
+           <number>12</number>
+          </property>
+          <property name="bottomMargin">
+           <number>1</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="path_1">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="6" column="1" alignment="Qt::AlignRight">
+        <widget class="QRadioButton" name="radioButton_2">
+         <property name="maximumSize">
+          <size>
+           <width>100000</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Read(s)</string>
+         </property>
+        </widget>
+       </item>
        <item row="4" column="0">
         <widget class="QLabel" name="label_3">
          <property name="maximumSize">
@@ -40,49 +180,165 @@
          </property>
         </widget>
        </item>
-       <item row="0" column="0">
-        <widget class="QLabel" name="label">
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_4">
          <property name="maximumSize">
           <size>
-           <width>16777215</width>
-           <height>40</height>
+           <width>120</width>
+           <height>16777215</height>
           </size>
          </property>
          <property name="text">
-          <string>crRNA Sequence File:</string>
+          <string>Query Options:</string>
          </property>
         </widget>
        </item>
-       <item row="5" column="0">
-        <widget class="QPushButton" name="pushButton_4">
+       <item row="4" column="2" colspan="4">
+        <widget class="QGroupBox" name="groupBox_3">
          <property name="minimumSize">
           <size>
            <width>0</width>
-           <height>70</height>
+           <height>45</height>
           </size>
          </property>
-         <property name="text">
-          <string>Run Off-Target</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="0">
-        <widget class="QLabel" name="label_2">
          <property name="maximumSize">
           <size>
            <width>16777215</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="title">
+          <string>Selected File:</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_7">
+          <property name="topMargin">
+           <number>1</number>
+          </property>
+          <property name="bottomMargin">
+           <number>1</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="path_3">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QPushButton" name="browse_3">
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
            <height>40</height>
           </size>
          </property>
          <property name="text">
-          <string>Off-Target Reference File:</string>
+          <string>Browse</string>
          </property>
         </widget>
        </item>
-       <item row="5" column="2" colspan="2">
+       <item row="2" column="2" colspan="4">
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="title">
+          <string>Selected File:</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_6">
+          <property name="topMargin">
+           <number>1</number>
+          </property>
+          <property name="bottomMargin">
+           <number>1</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="path_2">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="browse_2">
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Browse</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="3" rowspan="2" colspan="3">
         <widget class="QProgressBar" name="progressBar">
+         <property name="minimumSize">
+          <size>
+           <width>430</width>
+           <height>0</height>
+          </size>
+         </property>
          <property name="value">
           <number>24</number>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0" alignment="Qt::AlignRight">
+        <widget class="QRadioButton" name="radioButton">
+         <property name="maximumSize">
+          <size>
+           <width>10000</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Genome(s)</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
          </property>
         </widget>
        </item>
@@ -99,125 +355,33 @@
          </property>
         </widget>
        </item>
-       <item row="2" column="1">
-        <widget class="QPushButton" name="browse_2">
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_2">
          <property name="maximumSize">
           <size>
-           <width>100</width>
+           <width>16777215</width>
            <height>40</height>
           </size>
          </property>
          <property name="text">
-          <string>Browse</string>
+          <string>Off-Target Reference File:</string>
          </property>
         </widget>
        </item>
-       <item row="4" column="1">
-        <widget class="QPushButton" name="browse_3">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
          <property name="maximumSize">
           <size>
-           <width>100</width>
+           <width>16777215</width>
            <height>40</height>
           </size>
          </property>
          <property name="text">
-          <string>Browse</string>
+          <string>crRNA Sequence File:</string>
          </property>
-        </widget>
-       </item>
-       <item row="0" column="2" colspan="2">
-        <widget class="QGroupBox" name="groupBox_1">
-         <property name="title">
-          <string>Selected File:</string>
-         </property>
-         <layout class="QGridLayout" name="gridLayout_3">
-          <item row="0" column="0">
-           <widget class="QLabel" name="path_1">
-            <property name="text">
-             <string/>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </item>
-       <item row="2" column="2" colspan="2">
-        <widget class="QGroupBox" name="groupBox_2">
-         <property name="title">
-          <string>Selected File:</string>
-         </property>
-         <layout class="QGridLayout" name="gridLayout_6">
-          <item row="0" column="0">
-           <widget class="QLabel" name="path_2">
-            <property name="text">
-             <string/>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </item>
-       <item row="4" column="2" colspan="2">
-        <widget class="QGroupBox" name="groupBox_3">
-         <property name="title">
-          <string>Selected File:</string>
-         </property>
-         <layout class="QGridLayout" name="gridLayout_7">
-          <item row="0" column="0">
-           <widget class="QLabel" name="path_3">
-            <property name="text">
-             <string/>
-            </property>
-           </widget>
-          </item>
-         </layout>
         </widget>
        </item>
       </layout>
-     </widget>
-    </item>
-    <item row="2" column="0" rowspan="4">
-     <widget class="QGraphicsView" name="graphicsView"/>
-    </item>
-    <item row="2" column="1" rowspan="4">
-     <widget class="QTabWidget" name="tabWidget">
-      <property name="currentIndex">
-       <number>1</number>
-      </property>
-      <widget class="QWidget" name="tab">
-       <attribute name="title">
-        <string>Total crRNA View</string>
-       </attribute>
-       <layout class="QGridLayout" name="gridLayout_4">
-        <item row="0" column="0">
-         <widget class="QTableWidget" name="crRNAViewer"/>
-        </item>
-       </layout>
-      </widget>
-      <widget class="QWidget" name="tab_2">
-       <attribute name="title">
-        <string>Individual crRNA View</string>
-       </attribute>
-       <layout class="QGridLayout" name="gridLayout_5">
-        <item row="0" column="0">
-         <widget class="QGraphicsView" name="graphicsView_2"/>
-        </item>
-       </layout>
-      </widget>
-     </widget>
-    </item>
-    <item row="1" column="0">
-     <widget class="QPushButton" name="pushButton_5">
-      <property name="text">
-       <string>Plot  Selection</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="QPushButton" name="pushButton_6">
-      <property name="text">
-       <string>Clear Selection</string>
-      </property>
      </widget>
     </item>
    </layout>
@@ -227,7 +391,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>832</width>
+     <width>1000</width>
      <height>24</height>
     </rect>
    </property>
