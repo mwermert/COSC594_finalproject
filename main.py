@@ -17,6 +17,7 @@ class MyMainWindow(QtWidgets.QMainWindow):
         self.path2 = "" #Path to ref file
         self.path3 = "" #Path to query file
         self.query_dict = {}
+        self.mash_dict = {}
 
         ### crRNA table settings
         self.crRNA_table.setColumnCount(7)  # hardcoded because there will always be nine columns
@@ -124,8 +125,10 @@ class MyMainWindow(QtWidgets.QMainWindow):
         functions.
         """
         self.run_mash()
-        ###Filter bad sequences out here!###
-        self.build_index()
+        self.filter_query()
+        self.build_index(self.filtered_out_path)
+        self.Compress_gRNA(self.path1)
+        self.OTF()
 
     def run_mash(self):
         """
@@ -158,7 +161,7 @@ class MyMainWindow(QtWidgets.QMainWindow):
             endo = "spCas9"
             pam = "NGG"
             output_dir = os.getcwd()
-            self.index = output_dir + "temp_spCas9.cspr"
+            self.index = output_dir + "/temp_spCas9.cspr"
             org_name = "temp_index"
             guide_len = "20"
             seed_len = "16"
@@ -168,10 +171,102 @@ class MyMainWindow(QtWidgets.QMainWindow):
 
         else:
             QtWidgets.QMessageBox.question(self, "Error!","Run Mash first!",QtWidgets.QMessageBox.Ok)
+    
+ 
+    def Compress_gRNA(self, input_file):
+        """
+        This function compresses the gRNA's for off-target input
+        """
 
-###Off-target function
+        def nt2int(nt):
+            if nt == 'A':
+                return 0
+            elif nt == 'T':
+                return 1
+            elif nt == 'C':
+                return 2
+            elif nt == 'G':
+                return 3
+            else:
+                return 0
+         
+        def compress(uncompressed, base):
+            base_array_64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789=/"
+            compseq = 0
+            if type(uncompressed) == str:
+                for i in range(len(uncompressed)):
+                    val = nt2int(uncompressed[i]) * pow(4, i)  # multiplying by power-4 converts to base10
+                    compseq += val
+                uncompressed = compseq
+            compreturn = str()
+            while uncompressed >= base:
+                rem = uncompressed%base
+                uncompressed = int(uncompressed/base)
+                compreturn = base_array_64[rem] + compreturn
+            compreturn = base_array_64[uncompressed] + compreturn
+            return compreturn
+        
+        with open(input_file, "r") as file:
+            readlines = file.readlines()[1:] #Assumes first line contains column names
+            self.guides = os.getcwd() + "/temp.txt"
+            with open(self.guides, "w") as f:
+                for index, item in enumerate(readlines):
+                    item = item.strip().split(",")
+                    list = [item[1], item[2], item[3], item[4], item[5]]
+                    tmp = str(compress(str(list[0]),64) + "," + compress(str(list[1]),64) + str(list[2]) + compress(str(list[3]),64) + "," + compress(str(list[4]),64))
+                    f.write(tmp + '\n')
+            f.close()
+            file.close()
+        
+    
+    def filter_query(self):
+        """
+        This function filters out query sequences with p-values under 0.001
+        """
+        with open(self.mash_out_path) as f:
+            for line in f:
+                line = " ".join(line.split())
+                hold = []
+                for x in line.split(' '):
+                    hold.append(x)
+                if float(hold[3]) > 0.001:
+                    self.mash_dict[str(hold[1])] = ["--", hold[2], hold[3]] ## key = fasta id = [name, distance, p-val]
+        f.close()
 
+        q = SeqIO.parse(open(self.path3), 'fasta')
+        self.filtered_out_path = os.getcwd() + "/filtered_query.fasta"  ## Holds sequences for off-target algorithm
+        with open(self.filtered_out_path, 'w') as outfile:
+            for fasta in q:
+                id, description = fasta.id, fasta.description
+                if id in self.mash_dict.keys():
+                    line = description.replace(",","")
+                    hold = []
+                    name = ""
+                    for x in line.split(' '):
+                        hold.append(x)
+                    for i in range(1,len(hold)-2):
+                        name += hold[i] + " "
+                    self.mash_dict[id][0] = name
+                    SeqIO.write(fasta, outfile, 'fasta')
+        outfile.close()
+        
+            
+    def OTF(self):
+        """
+        This function rans the Off-Target Algorithm and saves it to OT_results.txt
+        """
+        ### "path to exe" "compressed guides" True "CSPR path" "output path" "CASPERinfo path" [max mismatches = (3-5)] [tolerance value = 0.05] [average output] [detailed output]
+        path_to_exe = os.getcwd() + "/executables/OT_mac"
+        path_to_guides = self.guides
+        CSPR_path = self.index
+        self.ot_out = os.getcwd() + "/OT_results.txt"
+        index_cmd = '"' + path_to_exe + '" "' + path_to_guides + '" ' + "True" + ' "' + CSPR_path + '" "' + self.ot_out + '" "' + self.casper_info + '" ' + "3" + ' ' + "0.05" + ' ' + "True" + ' ' + "False"
+        print(index_cmd)
+        os.system(index_cmd)
+
+        
 ###Off-target + mash output parsing function
+
 
 if __name__ == '__main__':
     QtWidgets.QApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling, True)
