@@ -207,11 +207,12 @@ class MyMainWindow(QtWidgets.QMainWindow):
             return compreturn
         
         with open(input_file, "r") as file:
-            readlines = file.readlines()[1:] #Assumes first line contains column names
             self.guides = os.getcwd() + "/temp.txt"
             with open(self.guides, "w") as f:
-                for index, item in enumerate(readlines):
-                    item = item.strip().split(",")
+                for index in file:
+                    item = index.strip().split(",")
+                    if item[1] == "Sequence":
+                        continue
                     list = [item[1], item[2], item[3], item[4], item[5]]
                     tmp = str(compress(str(list[0]),64) + "," + compress(str(list[1]),64) + str(list[2]) + compress(str(list[3]),64) + "," + compress(str(list[4]),64))
                     f.write(tmp + '\n')
