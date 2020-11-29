@@ -10,7 +10,11 @@ Rough Overview of Project:
 
 
 OT executable command format:
-"executable" "compressed guides" True "CSPR path" "Output path" "CASPERinfo path" 1 0.0 True False
+"executable" "compressed guides" True "CSPR path" "Output path" "CASPERinfo path" 1 0.05 True False
+max num mismatches 3-5
+tolerance value (0-1, 0 is better) 0.05
+avg. output = True
+detailed output = False
 
 Example:
-"/Users/ddooley/casperdb/test/OT_mac" "/Users/ddooley/casperdb/test/temp.txt" False "/Users/ddooley/casperdb/atcc_spCas9.cspr" "/Users/ddooley/casperdb/test/test_OffTargetResults.txt" "/Users/ddooley/casperdb/CASPERinfo" 1 0.0 True False
+"/Users/ddooley/casperdb/test/OT_mac" "/Users/ddooley/casperdb/test/temp.txt" True "/Users/ddooley/casperdb/atcc_spCas9.cspr" "/Users/ddooley/casperdb/test/test_OffTargetResults.txt" "/Users/ddooley/casperdb/CASPERinfo" 1 0.0 True False
