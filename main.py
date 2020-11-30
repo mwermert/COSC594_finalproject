@@ -22,7 +22,7 @@ class MyMainWindow(QtWidgets.QMainWindow):
         ### crRNA table settings
         self.crRNA_table.setColumnCount(7)  # hardcoded because there will always be nine columns
         self.crRNA_table.setShowGrid(False)
-        self.crRNA_table.setHorizontalHeaderLabels("Gene;Sequence;Avg. Off-Target;On-Target;Location;Strand;PAM".split(";"))
+        self.crRNA_table.setHorizontalHeaderLabels("Gene;Sequence;Avg. Off-Target;On-Target;Location;PAM;Strand".split(";"))
         self.crRNA_table.horizontalHeader().setSectionsClickable(True)
         self.crRNA_table.setSelectionBehavior(QtWidgets.QAbstractItemView.SelectRows)
         self.crRNA_table.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
@@ -169,6 +169,7 @@ class MyMainWindow(QtWidgets.QMainWindow):
             index_cmd = '"' + path_to_exe + '" "' + endo + '" "' + pam + '" "' + org_code + '" "' + "FALSE" + '" "' + output_dir + '" "' + self.casper_info + '" "' + input_fasta + '" "' + org_name + '" "' + guide_len + '" "'  + seed_len + '" " "'
             print(index_cmd)
             os.system(index_cmd)
+            os.remove(input_fasta) ###Clean up intermediate fasta file
 
         else:
             QtWidgets.QMessageBox.question(self, "Error!","Run Mash first!",QtWidgets.QMessageBox.Ok)
@@ -205,19 +206,20 @@ class MyMainWindow(QtWidgets.QMainWindow):
                 compreturn = base_array_64[rem] + compreturn
             compreturn = base_array_64[uncompressed] + compreturn
             return compreturn
-        
+
+        ###Assumes that gRNA csv file comes in format of gene, sequence, score, location, pam, strand 
         with open(input_file, "r") as file:
             self.guides = os.getcwd() + "/temp.txt"
             with open(self.guides, "w") as f:
                 for index in file:
+                    print(index)
                     item = index.strip().split(",")
                     if item[1] == "Sequence":
                         continue
-                    list = [item[1], item[2], item[3], item[4], item[5]]
-                    tmp = str(compress(str(list[0]),64) + "," + compress(str(list[1]),64) + str(list[2]) + compress(str(list[3]),64) + "," + compress(str(list[4]),64))
+                    list = [item[3], item[1], item[5], item[4], item[2]]
+                    ###Compressed sequences must be in format: loc,seq+strand+pam,score
+                    tmp = str(compress(int(list[0]),64) + "," + compress(str(list[1]),64) + str(list[2]) + compress(str(list[3]),64) + "," + compress(int(list[4]),64))
                     f.write(tmp + '\n')
-            f.close()
-            file.close()
         
     
     def filter_query(self):
@@ -230,9 +232,10 @@ class MyMainWindow(QtWidgets.QMainWindow):
                 hold = []
                 for x in line.split(' '):
                     hold.append(x)
-                if float(hold[3]) > 0.001:
+                if (float(hold[3]) > 0.001 or float(hold[3]) == 0):
                     self.mash_dict[str(hold[1])] = ["--", hold[2], hold[3]] ## key = fasta id = [name, distance, p-val]
         f.close()
+        os.remove(self.mash_out_path) ###Delete intermediate Mash file
 
         q = SeqIO.parse(open(self.path3), 'fasta')
         self.filtered_out_path = os.getcwd() + "/filtered_query.fasta"  ## Holds sequences for off-target algorithm
@@ -256,9 +259,10 @@ class MyMainWindow(QtWidgets.QMainWindow):
         """
         This function runs the Off-Target Algorithm and saves it to OT_results.txt
         """
-        ### "path to exe" "compressed guides" True "CSPR path" "output path" "CASPERinfo path" [max mismatches = (3-5)] [tolerance value = 0.05] [average output] [detailed output]
-        path_to_exe = os.getcwd() + "/executables/OT_mac"
+        ### "path to exe" "compressed guides" True "CSPR path" "output directory" "CASPERinfo path" [max mismatches = (3-5)] [tolerance value = 0.05] [average output] [detailed output]
+        path_to_exe = os.getcwd() + "/bin/OT_mac"
         path_to_guides = self.guides
+        self.index =  os.getcwd() + "/temp_spCas9.cspr"
         CSPR_path = self.index
         self.ot_out = os.getcwd() + "/OT_results.txt"
         index_cmd = '"' + path_to_exe + '" "' + path_to_guides + '" ' + "True" + ' "' + CSPR_path + '" "' + self.ot_out + '" "' + self.casper_info + '" ' + "3" + ' ' + "0.05" + ' ' + "True" + ' ' + "False"
