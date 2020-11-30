@@ -16,8 +16,8 @@ class MyMainWindow(QtWidgets.QMainWindow):
         self.path1 = "" #Path to crRNA file
         self.path2 = "" #Path to ref file
         self.path3 = "" #Path to query file
-        self.query_dict = {}
-        self.mash_dict = {}
+        self.mash_dict = {} #Holds mash output data
+        self.output = [] #List to hold all output data
 
         ### crRNA table settings
         self.crRNA_table.setColumnCount(7)  # hardcoded because there will always be nine columns
@@ -129,6 +129,7 @@ class MyMainWindow(QtWidgets.QMainWindow):
         self.build_index(self.filtered_out_path)
         self.Compress_gRNA(self.path1)
         self.OTF()
+        self.output_parse()
 
     def run_mash(self):
         """
@@ -177,7 +178,6 @@ class MyMainWindow(QtWidgets.QMainWindow):
         """
         This function compresses the gRNA's for off-target input
         """
-
         def nt2int(nt):
             if nt == 'A':
                 return 0
@@ -254,7 +254,7 @@ class MyMainWindow(QtWidgets.QMainWindow):
             
     def OTF(self):
         """
-        This function rans the Off-Target Algorithm and saves it to OT_results.txt
+        This function runs the Off-Target Algorithm and saves it to OT_results.txt
         """
         ### "path to exe" "compressed guides" True "CSPR path" "output path" "CASPERinfo path" [max mismatches = (3-5)] [tolerance value = 0.05] [average output] [detailed output]
         path_to_exe = os.getcwd() + "/executables/OT_mac"
@@ -265,8 +265,68 @@ class MyMainWindow(QtWidgets.QMainWindow):
         print(index_cmd)
         os.system(index_cmd)
 
+    
+    def output_parse(self):
+        """
+        This function finds average off-target scores and populates the table, and creates a list with output data for plotting
+        """
+        off_target = open(self.ot_out, 'r')
+        for x in off_target:
+            if x[0] != '0':
+                if x[0] == "D":
+                    continue
+                split_1 = x.replace("\n","")
+                split_1 = split_1.replace(" ","")
+                split_1 = split_1.split(":") # split_1[0] holds sequence, split_1[1] holds average OT score
+                if split_1[1] != "0.000000":
+                    self.crRNA_dict[str(split_1[0])][1] = split_1[1]
+            else:
+                split_2 = x.replace("\n","")
+                split_2 = split_2.split(",") # split_2[0] holds off-target score, split_2[1] holds index in index_file
+                ### output list = sequence, off-target score, off-target organism, distance, gene, location, PAM, strand, on-target score
+                self.output.append([str(split_1[0]), split_2[0], split_2[1], "distance", self.crRNA_dict[split_1[0]][0], self.crRNA_dict[split_1[0]][3], self.crRNA_dict[split_1[0]][4], self.crRNA_dict[split_1[0]][5], self.crRNA_dict[split_1[0]][2]])
+
+        ## Error generated if off-target output file shows all scores as 0
+        if not self.output:
+            QtWidgets.QMessageBox.question(self, "Error!","Check off-target output file",QtWidgets.QMessageBox.Ok)
+
+        index_file = open(self.index, 'r')
+        index_dict = {}
         
-###Off-target + mash output parsing function
+        for x in index_file:
+            if x[0] == '>':
+                line = x.replace(">","")
+                line = line.replace("(","")
+                line = line.replace(")","")
+                line = line.replace("\n","")
+                line = line.replace(",","")
+                hold = line.split(" ")
+                num = hold[len(hold)-1]
+                id = hold[0]
+                name = ""
+                i = 1
+                while (hold[i] != "complete"):
+                    name += hold[i] + " "
+                    i += 1
+                index_dict[num] = [id, name]
+        index_file.close()
+
+        for x in self.output:
+            name = index_dict[x[2]][1]
+            x[2] = name # Off-target organism name
+            x[3] = self.mash_dict[index_dict[x[2]][0]][1] # Distance
+
+        ### Populates table with average off-target scores
+        for index, (x,y) in enumerate(self.crRNA_dict.items()):
+            avg_off = QtWidgets.QTableWidgetItem(str(y[1]))
+            self.crRNA_table.setItem(index, 2, avg_off)
+        self.crRNA_table.resizeColumnsToContents()
+
+        ## self.output  ---list of lists containing data for plotting
+        ## Format for each index in the list: (sequence, off-target score, off-target organism, distance, gene, location, PAM, strand, on-target score
+
+
+###Plot data
 
 
 if __name__ == '__main__':
