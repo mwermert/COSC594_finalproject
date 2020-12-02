@@ -37,6 +37,7 @@ def main(argv):
 
         # produce a legend with the unique colors from the scatter
         legend1 = axs.legend(loc="upper right", title="Off Target Organism")
+        legend1 = axs.legend( prop={'size': 6})
         axs.set_ylabel('Organism Distance')
         axs.set_xlabel('Off-Target Score')
         axs.set_title(argv[1])
