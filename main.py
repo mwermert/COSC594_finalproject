@@ -60,9 +60,6 @@ class MyMainWindow(QtWidgets.QMainWindow):
         else:
             QtWidgets.QMessageBox.question(self, "Error!","You must select a .csv file.\n\nTry again!",QtWidgets.QMessageBox.Ok)
 
-
-
-
     def get_file2(self):
         filed = QtWidgets.QFileDialog()
         myFile = QtWidgets.QFileDialog.getOpenFileName(filed, "Choose Reference File (.fasta only)")
@@ -126,8 +123,8 @@ class MyMainWindow(QtWidgets.QMainWindow):
         """
         self.run_mash()
         self.filter_query()
-        self.build_index(self.filtered_out_path)
-        self.Compress_gRNA(self.path1)
+        #self.build_index(self.filtered_out_path)
+        self.format_gRNA(self.path1)
         self.OTF()
         self.output_parse()
 
@@ -173,55 +170,27 @@ class MyMainWindow(QtWidgets.QMainWindow):
 
         else:
             QtWidgets.QMessageBox.question(self, "Error!","Run Mash first!",QtWidgets.QMessageBox.Ok)
-    
- 
-    def Compress_gRNA(self, input_file):
-        """
-        This function compresses the gRNA's for off-target input
-        """
-        def nt2int(nt):
-            if nt == 'A':
-                return 0
-            elif nt == 'T':
-                return 1
-            elif nt == 'C':
-                return 2
-            elif nt == 'G':
-                return 3
-            else:
-                return 0
-         
-        def compress(uncompressed, base):
-            base_array_64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789=/"
-            compseq = 0
-            if type(uncompressed) == str:
-                for i in range(len(uncompressed)):
-                    val = nt2int(uncompressed[i]) * pow(4, i)  # multiplying by power-4 converts to base10
-                    compseq += val
-                uncompressed = compseq
-            compreturn = str()
-            while uncompressed >= base:
-                rem = uncompressed%base
-                uncompressed = int(uncompressed/base)
-                compreturn = base_array_64[rem] + compreturn
-            compreturn = base_array_64[uncompressed] + compreturn
-            return compreturn
 
-        ###Assumes that gRNA csv file comes in format of gene, sequence, score, location, pam, strand 
+
+    def format_gRNA(self, input_file):
+        """
+        This function formats the gRNA's for off-target input
+        """
+        ###Assumes that gRNA csv file comes in format of gene, sequence, score, location, pam, strand
+        ###Needs to be in format of loc, seq, pam, score, strand w/ semicolon sep.
         with open(input_file, "r") as file:
             self.guides = os.getcwd() + "/temp.txt"
             with open(self.guides, "w") as f:
                 for index in file:
-                    print(index)
                     item = index.strip().split(",")
                     if item[1] == "Sequence":
                         continue
-                    list = [item[3], item[1], item[5], item[4], item[2]]
-                    ###Compressed sequences must be in format: loc,seq+strand+pam,score
-                    tmp = str(compress(int(list[0]),64) + "," + compress(str(list[1]),64) + str(list[2]) + compress(str(list[3]),64) + "," + compress(int(list[4]),64))
+                    list = [item[3], item[1], item[4], item[2], item[5]]
+                    ###Compressed sequences must be in format: loc;seq;pam;score;strand
+                    tmp = str(list[0] + ";" + list[1] + ";" + list[2] + ";" + list[3] + ";" + list[4])
                     f.write(tmp + '\n')
-        
-    
+
+
     def filter_query(self):
         """
         This function filters out query sequences with p-values under 0.001
@@ -252,24 +221,24 @@ class MyMainWindow(QtWidgets.QMainWindow):
                         name += hold[i] + " "
                     self.mash_dict[id][0] = name
                     SeqIO.write(fasta, outfile, 'fasta')
-        outfile.close()
-        
-            
+
     def OTF(self):
         """
         This function runs the Off-Target Algorithm and saves it to OT_results.txt
         """
-        ### "path to exe" "compressed guides" True "CSPR path" "output directory" "CASPERinfo path" [max mismatches = (3-5)] [tolerance value = 0.05] [average output] [detailed output]
+        ### "path to exe" "formatted guides" "CSPR path" "DB path" "output file path" "CASPERinfo path" [max mismatches = (3-5)] [tolerance value = 0.05] [average output] [detailed output]
         path_to_exe = os.getcwd() + "/bin/OT_mac"
         path_to_guides = self.guides
-        self.index =  os.getcwd() + "/temp_spCas9.cspr"
+        self.index =  os.getcwd() + "/bin/skin_spCas9.cspr" ###Index file containing unique sequences and organism info
+        self.db =  os.getcwd() + "/bin/skin_spCas9_repeats.db"
         CSPR_path = self.index
         self.ot_out = os.getcwd() + "/OT_results.txt"
-        index_cmd = '"' + path_to_exe + '" "' + path_to_guides + '" ' + "True" + ' "' + CSPR_path + '" "' + self.ot_out + '" "' + self.casper_info + '" ' + "3" + ' ' + "0.05" + ' ' + "True" + ' ' + "False"
+        index_cmd = '"' + path_to_exe + '" "' + path_to_guides + '" "' + CSPR_path + '" "' + self.db + '" "' + self.ot_out + '" "' + self.casper_info + '" ' + "3" + "0.05" + ' ' + "True False"
         print(index_cmd)
         os.system(index_cmd)
+        os.remove(self.guides) ###Removes intermediate gRNA file
 
-    
+
     def output_parse(self):
         """
         This function finds average off-target scores and populates the table, and creates a list with output data for plotting
@@ -296,7 +265,7 @@ class MyMainWindow(QtWidgets.QMainWindow):
 
         index_file = open(self.index, 'r')
         index_dict = {}
-        
+
         for x in index_file:
             if x[0] == '>':
                 line = x.replace(">","")
