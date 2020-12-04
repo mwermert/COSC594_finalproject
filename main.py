@@ -274,6 +274,23 @@ class MyMainWindow(QtWidgets.QMainWindow):
         """
         This function finds average off-target scores and populates the table, and creates a list with output data for plotting
         """
+
+        organisms = open('./temp_spCas9.cspr', 'r')
+
+        organism_dict = {}
+        for x in organisms:
+            if x[0] == '>':
+                split_1 = x.replace("\n","")
+                split_1 = split_1.split(" ")
+                del split_1[0]
+                ind = split_1[len(split_1) - 1]
+                ind = ind.replace("(", "")
+                ind = ind.replace(")", "")
+                del split_1[len(split_1) - 1]
+                organism_dict[" ".join(split_1)] = int(ind)
+
+        print(organism_dict)
+
         off_target = open(self.ot_out, 'r')
         for x in off_target:
             if x[0] != '0':
