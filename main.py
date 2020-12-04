@@ -17,7 +17,8 @@ class MyMainWindow(QtWidgets.QMainWindow):
         self.path1 = "" #Path to crRNA file
         self.path2 = "" #Path to ref file
         self.path3 = "" #Path to query file
-        self.mash_dict = {} #Holds mash output data
+        self.mash_all = {} #Holds all mash output 
+        self.mash_dict = {} #Holds filtered mash output data
         self.output = [] #List to hold all output data
 
         ### crRNA table settings
@@ -202,8 +203,9 @@ class MyMainWindow(QtWidgets.QMainWindow):
                 hold = []
                 for x in line.split(' '):
                     hold.append(x)
+                self.mash_all[str(hold[1])] = ["--", hold[2], hold[3]] ## Holds entire mash output
                 if (float(hold[3]) > 0.001 or float(hold[3]) == 0):
-                    self.mash_dict[str(hold[1])] = ["--", hold[2], hold[3]] ## key = fasta id = [name, distance, p-val]
+                    self.mash_dict[str(hold[1])] = ["--", hold[2], hold[3]] ## key = fasta id = [name, distance, p-val], holds filtered mash output
         f.close()
         os.remove(self.mash_out_path) ###Delete intermediate Mash file
 
@@ -234,7 +236,7 @@ class MyMainWindow(QtWidgets.QMainWindow):
         self.db =  os.getcwd() + "/bin/skin_spCas9_repeats.db"
         CSPR_path = self.index
         self.ot_out = os.getcwd() + "/OT_results.txt"
-        index_cmd = '"' + path_to_exe + '" "' + path_to_guides + '" "' + CSPR_path + '" "' + self.db + '" "' + self.ot_out + '" "' + self.casper_info + '" ' + "3" + "0.05" + ' ' + "True False"
+        index_cmd = '"' + path_to_exe + '" "' + path_to_guides + '" "' + CSPR_path + '" "' + self.db + '" "' + self.ot_out + '" "' + self.casper_info + '" ' + "3" + " " + "0.05" + ' ' + "True False"
         print(index_cmd)
         os.system(index_cmd)
         os.remove(self.guides) ###Removes intermediate gRNA file
@@ -267,31 +269,34 @@ class MyMainWindow(QtWidgets.QMainWindow):
         if not self.output:
             QtWidgets.QMessageBox.question(self, "Error!","Check off-target output file",QtWidgets.QMessageBox.Ok)
 
-        index_file = open(self.index, 'r')
-        index_dict = {}
+        with open(self.index, 'rb') as f:
+            index_file = gzip.GzipFile(fileobj=f)
+            index_dict = {}
 
-        for x in index_file:
-            if x[0] == '>':
-                line = x.replace(">","")
-                line = line.replace("(","")
-                line = line.replace(")","")
-                line = line.replace("\n","")
-                line = line.replace(",","")
-                hold = line.split(" ")
-                num = hold[len(hold)-1]
-                id = hold[0]
-                name = ""
-                i = 1
-                while (hold[i] != "complete"):
-                    name += hold[i] + " "
-                    i += 1
-                index_dict[num] = [id, name]
-        index_file.close()
+            for x in index_file:
+                x = x.decode("utf-8")
+                if x[0] == '>':
+                    line = x.replace(">","")
+                    line = line.replace("(","")
+                    line = line.replace(")","")
+                    line = line.replace("\n","")
+                    line = line.replace(",","")
+                    hold = line.split(" ")
+                    num = hold[len(hold)-1]
+                    id = hold[0]
+                    name = ""
+                    i = 1
+                    while (hold[i] != "complete"):
+                        name += hold[i] + " "
+                        i += 1
+                    num = num.replace("\r","")
+                    index_dict[num] = [id, name]
+        f.close()
 
         for x in self.output:
             name = index_dict[x[2]][1]
+            x[3] = self.mash_all[index_dict[x[2]][0]][1] # Distance
             x[2] = name # Off-target organism name
-            x[3] = self.mash_dict[index_dict[x[2]][0]][1] # Distance
 
         ### Populates table with average off-target scores
         for index, (x,y) in enumerate(self.crRNA_dict.items()):
