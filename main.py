@@ -2,6 +2,7 @@ import gzip
 from PyQt5 import QtWidgets, Qt, QtGui, QtCore, uic
 from Bio import SeqIO
 import os, sys, platform, time
+import matplotlib.pyplot as plt
 
 ### GUI Declarations/Setup
 class MyMainWindow(QtWidgets.QMainWindow):
@@ -126,7 +127,7 @@ class MyMainWindow(QtWidgets.QMainWindow):
         """
         self.run_mash()
         self.filter_query()
-        self.build_index(self.filtered_out_path)
+        #self.build_index(self.filtered_out_path)
         self.Compress_gRNA(self.path1)
         self.OTF()
         self.output_parse()
@@ -146,7 +147,7 @@ class MyMainWindow(QtWidgets.QMainWindow):
             ref_file = self.path2
             query_file = self.path3
             self.mash_out_path = os.getcwd() + "/mash_out.txt"
-            path_to_exe = "/Users/ddooley/bioinformatics_packages/Mash/mash"
+            path_to_exe = "/home/mwermert/Desktop/mash-Linux64-v2.2/mash"
             cmd = ""
             flag_str = "-s 10000 -k 16 -i"
             cmd += path_to_exe + " dist " + " " + flag_str + " " + ref_file + " " + query_file + " > " + self.mash_out_path
@@ -157,7 +158,7 @@ class MyMainWindow(QtWidgets.QMainWindow):
     def build_index(self, input_fasta):
     ###"path to exe" "endo" "PAM" "org_code" "FALSE" "output dir" "CASPERinfo" "query file" "org_name "guide length" "seed length" " "
         if self.mash_out_path: ###Makes sure that Mash has been run first
-            path_to_exe = os.getcwd() + "/bin/index_builder_mac"
+            path_to_exe = os.getcwd() + "/bin/index_builder_linux"
             org_code = "temp"
             endo = "spCas9"
             pam = "NGG"
@@ -260,21 +261,37 @@ class MyMainWindow(QtWidgets.QMainWindow):
         This function runs the Off-Target Algorithm and saves it to OT_results.txt
         """
         ### "path to exe" "compressed guides" True "CSPR path" "output directory" "CASPERinfo path" [max mismatches = (3-5)] [tolerance value = 0.05] [average output] [detailed output]
-        path_to_exe = os.getcwd() + "/bin/OT_mac"
+        path_to_exe = os.getcwd() + "/bin/OT_linux"
         path_to_guides = self.guides
         self.index =  os.getcwd() + "/temp_spCas9.cspr"
         CSPR_path = self.index
         self.ot_out = os.getcwd() + "/OT_results.txt"
         index_cmd = '"' + path_to_exe + '" "' + path_to_guides + '" ' + "True" + ' "' + CSPR_path + '" "' + self.ot_out + '" "' + self.casper_info + '" ' + "3" + ' ' + "0.05" + ' ' + "True" + ' ' + "False"
         print(index_cmd)
-        os.system(index_cmd)
+        #os.system(index_cmd)
 
     
     def output_parse(self):
         """
         This function finds average off-target scores and populates the table, and creates a list with output data for plotting
         """
-        off_target = open(self.ot_out, 'r')
+        organisms = open('./temp_spCas9.cspr', 'r')
+
+        organism_dict = {}
+        for x in organisms:
+            if x[0] == '>':
+                split_1 = x.replace("\n","")
+                split_1 = split_1.split(" ")
+                del split_1[0]
+                ind = split_1[len(split_1) - 1]
+                ind = ind.replace("(", "")
+                ind = ind.replace(")", "")
+                del split_1[len(split_1) - 1]
+                organism_dict[int(ind)] = " ".join(split_1)
+
+        print(organism_dict)
+
+        off_target = open('./test_files/example_offtarget_output.txt', 'r')
         for x in off_target:
             if x[0] != '0':
                 if x[0] == "D":
@@ -289,7 +306,7 @@ class MyMainWindow(QtWidgets.QMainWindow):
                 split_2 = split_2.split(",") # split_2[0] holds off-target score, split_2[1] holds index in index_file
                 ### output list = sequence, off-target score, off-target organism, distance, gene, location, PAM, strand, on-target score
                 self.output.append([str(split_1[0]), split_2[0], split_2[1], "distance", self.crRNA_dict[split_1[0]][0], self.crRNA_dict[split_1[0]][3], self.crRNA_dict[split_1[0]][4], self.crRNA_dict[split_1[0]][5], self.crRNA_dict[split_1[0]][2]])
-
+            
         ## Error generated if off-target output file shows all scores as 0
         if not self.output:
             QtWidgets.QMessageBox.question(self, "Error!","Check off-target output file",QtWidgets.QMessageBox.Ok)
@@ -326,6 +343,44 @@ class MyMainWindow(QtWidgets.QMainWindow):
             self.crRNA_table.setItem(index, 2, avg_off)
         self.crRNA_table.resizeColumnsToContents()
 
+        markers = ['.', 'o', 'v', '^', '<', '>', '1', '2', '3', '4']
+        
+        organismList = {}
+
+        for row in  self.output:
+            if row[2] != '':
+                if not row[2] in organismList:
+                    organismList[row[2]] = []
+                organismList[row[2]].append(row[1], row[3])
+            
+
+        fig, axs = plt.subplots()
+
+        count = 0
+        for key in organismList:
+            x_vals = []
+            y_vals = []
+            for i in range(0, len(organismList[key])):
+                x_vals.append(float(organismList[key][i][0]))
+                y_vals.append(float(organismList[key][i][1]))
+
+            scatter = axs.scatter(x_vals, y_vals, s = 80, label = key, marker=markers[count])
+
+            count += 1
+
+        # produce a legend with the unique colors from the scatter
+        legend1 = axs.legend(loc="upper right", title="Off Target Organism")
+        legend1 = axs.legend( prop={'size': 6})
+        axs.set_ylabel('Organism Distance')
+        axs.set_xlabel('Off-Target Score')
+        axs.set_title(argv[1])
+        axs.add_artist(legend1)
+        plt.tight_layout()
+        plt.show()
+
+        for x in self.output:
+            print(x)
+            print('\n')
         ## self.output  ---list of lists containing data for plotting
         ## Format for each index in the list: (sequence, off-target score, off-target organism, distance, gene, location, PAM, strand, on-target score
 
