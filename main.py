@@ -303,6 +303,8 @@ class MyMainWindow(QtWidgets.QMainWindow):
             avg_off = QtWidgets.QTableWidgetItem(str(y[1]))
             self.crRNA_table.setItem(index, 2, avg_off)
         self.crRNA_table.resizeColumnsToContents()
+        
+        print(self.output)
 
         markers = ['.', 'o', 'v', '^', '<', '>', '1', '2', '3', '4']
         
@@ -328,20 +330,19 @@ class MyMainWindow(QtWidgets.QMainWindow):
             scatter = axs.scatter(x_vals, y_vals, s = 80, label = key, marker=markers[count])
 
             count += 1
+            print(x_vals)
+            print(y_vals)
 
         # produce a legend with the unique colors from the scatter
         legend1 = axs.legend(loc="upper right", title="Off Target Organism")
         legend1 = axs.legend( prop={'size': 6})
         axs.set_ylabel('Organism Distance')
         axs.set_xlabel('Off-Target Score')
-        axs.set_title(argv[1])
+        axs.set_title('gRNA selection')
         axs.add_artist(legend1)
         plt.tight_layout()
         plt.show()
 
-        for x in self.output:
-            print(x)
-            print('\n')
         ## self.output  ---list of lists containing data for plotting
         ## Format for each index in the list: (sequence, off-target score, off-target organism, distance, gene, location, PAM, strand, on-target score
 
