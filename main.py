@@ -235,7 +235,7 @@ class MyMainWindow(QtWidgets.QMainWindow):
         self.db =  os.getcwd() + "/bin/skin_spCas9_repeats.db"
         CSPR_path = self.index
         self.ot_out = os.getcwd() + "/OT_results.txt"
-        index_cmd = '"' + path_to_exe + '" "' + path_to_guides + '" "' + CSPR_path + '" "' + self.db + '" "' + self.ot_out + '" "' + self.casper_info + '" ' + "3" + "0.05" + ' ' + "True False"
+        index_cmd = '"' + path_to_exe + '" "' + path_to_guides + '" "' + CSPR_path + '" "' + self.db + '" "' + self.ot_out + '" "' + self.casper_info + '" ' + "3" + " " + "0.05" + ' ' + "True False"
         print(index_cmd)
         os.system(index_cmd)
         os.remove(self.guides) ###Removes intermediate gRNA file
