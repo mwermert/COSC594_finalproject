@@ -145,7 +145,7 @@ class MyMainWindow(QtWidgets.QMainWindow):
             ref_file = self.path2
             query_file = self.path3
             self.mash_out_path = os.getcwd() + "/mash_out.txt"
-            path_to_exe = "/home/mwermert/Desktop/mash-Linux64-v2.2/mash"
+            path_to_exe = "/Users/ddooley/bioinformatics_packages/Mash/mash"
             cmd = ""
             flag_str = "-s 10000 -k 16 -i"
             cmd += path_to_exe + " dist " + " " + flag_str + " " + ref_file + " " + query_file + " > " + self.mash_out_path
