@@ -2,7 +2,13 @@ import gzip
 from PyQt5 import QtWidgets, Qt, QtGui, QtCore, uic
 from Bio import SeqIO
 import os, sys, platform, time
+
+import matplotlib
+matplotlib.use('QT5Agg')
+
 import matplotlib.pyplot as plt
+from matplotlib.backends.backend_qt5agg import FigureCanvas
+from matplotlib.backends.backend_qt5agg import NavigationToolbar2QT as NavigationToolbar
 
 ### GUI Declarations/Setup
 class MyMainWindow(QtWidgets.QMainWindow):
@@ -330,8 +336,6 @@ class MyMainWindow(QtWidgets.QMainWindow):
             scatter = axs.scatter(x_vals, y_vals, s = 80, label = key, marker=markers[count])
 
             count += 1
-            print(x_vals)
-            print(y_vals)
 
         # produce a legend with the unique colors from the scatter
         legend1 = axs.legend(loc="upper right", title="Off Target Organism")
@@ -341,7 +345,12 @@ class MyMainWindow(QtWidgets.QMainWindow):
         axs.set_title('gRNA selection')
         axs.add_artist(legend1)
         plt.tight_layout()
-        plt.show()
+        
+        self.plotWidget = FigureCanvas(fig)
+        lay = QtWidgets.QVBoxLayout(self.total_crRNA)
+        lay.setContentsMargins(0,0,0,0)
+        lay.addWidget(self.plotWidget)
+        
 
         ## self.output  ---list of lists containing data for plotting
         ## Format for each index in the list: (sequence, off-target score, off-target organism, distance, gene, location, PAM, strand, on-target score
