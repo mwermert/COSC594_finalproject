@@ -2,6 +2,7 @@ import gzip
 from PyQt5 import QtWidgets, Qt, QtGui, QtCore, uic
 from Bio import SeqIO
 import os, sys, platform, time
+import matplotlib.pyplot as plt
 
 ### GUI Declarations/Setup
 class MyMainWindow(QtWidgets.QMainWindow):
@@ -155,7 +156,7 @@ class MyMainWindow(QtWidgets.QMainWindow):
     def build_index(self, input_fasta):
     ###"path to exe" "endo" "PAM" "org_code" "FALSE" "output dir" "CASPERinfo" "query file" "org_name "guide length" "seed length" " "
         if self.mash_out_path: ###Makes sure that Mash has been run first
-            path_to_exe = os.getcwd() + "/bin/index_builder_mac"
+            path_to_exe = os.getcwd() + "/bin/index_builder_linux"
             org_code = "temp"
             endo = "spCas9"
             pam = "NGG"
@@ -228,8 +229,8 @@ class MyMainWindow(QtWidgets.QMainWindow):
         """
         This function runs the Off-Target Algorithm and saves it to OT_results.txt
         """
-        ### "path to exe" "formatted guides" "CSPR path" "DB path" "output file path" "CASPERinfo path" [max mismatches = (3-5)] [tolerance value = 0.05] [average output] [detailed output]
-        path_to_exe = os.getcwd() + "/bin/OT_mac"
+        ### "path to exe" "compressed guides" True "CSPR path" "output directory" "CASPERinfo path" [max mismatches = (3-5)] [tolerance value = 0.05] [average output] [detailed output]
+        path_to_exe = os.getcwd() + "/bin/OT_linux"
         path_to_guides = self.guides
         self.index =  os.getcwd() + "/bin/skin_spCas9.cspr" ###Index file containing unique sequences and organism info
         self.db =  os.getcwd() + "/bin/skin_spCas9_repeats.db"
@@ -245,7 +246,10 @@ class MyMainWindow(QtWidgets.QMainWindow):
         """
         This function finds average off-target scores and populates the table, and creates a list with output data for plotting
         """
+
         off_target = open(self.ot_out, 'r')
+
+
         for x in off_target:
             if x[0] != '0':
                 if x[0] == "D":
@@ -260,7 +264,7 @@ class MyMainWindow(QtWidgets.QMainWindow):
                 split_2 = split_2.split(",") # split_2[0] holds off-target score, split_2[1] holds index in index_file
                 ### output list = sequence, off-target score, off-target organism, distance, gene, location, PAM, strand, on-target score
                 self.output.append([str(split_1[0]), split_2[0], split_2[1], "distance", self.crRNA_dict[split_1[0]][0], self.crRNA_dict[split_1[0]][3], self.crRNA_dict[split_1[0]][4], self.crRNA_dict[split_1[0]][5], self.crRNA_dict[split_1[0]][2]])
-
+            
         ## Error generated if off-target output file shows all scores as 0
         if not self.output:
             QtWidgets.QMessageBox.question(self, "Error!","Check off-target output file",QtWidgets.QMessageBox.Ok)
@@ -299,6 +303,45 @@ class MyMainWindow(QtWidgets.QMainWindow):
             avg_off = QtWidgets.QTableWidgetItem(str(y[1]))
             self.crRNA_table.setItem(index, 2, avg_off)
         self.crRNA_table.resizeColumnsToContents()
+        
+        print(self.output)
+
+        markers = ['.', 'o', 'v', '^', '<', '>', '1', '2', '3', '4']
+        
+        organismList = {}
+
+        for row in  self.output:
+            if row[2] != '':
+                if not row[2] in organismList:
+                    organismList[row[2]] = []
+                organismList[row[2]].append(row[1], row[3])
+            
+
+        fig, axs = plt.subplots()
+
+        count = 0
+        for key in organismList:
+            x_vals = []
+            y_vals = []
+            for i in range(0, len(organismList[key])):
+                x_vals.append(float(organismList[key][i][0]))
+                y_vals.append(float(organismList[key][i][1]))
+
+            scatter = axs.scatter(x_vals, y_vals, s = 80, label = key, marker=markers[count])
+
+            count += 1
+            print(x_vals)
+            print(y_vals)
+
+        # produce a legend with the unique colors from the scatter
+        legend1 = axs.legend(loc="upper right", title="Off Target Organism")
+        legend1 = axs.legend( prop={'size': 6})
+        axs.set_ylabel('Organism Distance')
+        axs.set_xlabel('Off-Target Score')
+        axs.set_title('gRNA selection')
+        axs.add_artist(legend1)
+        plt.tight_layout()
+        plt.show()
 
         ## self.output  ---list of lists containing data for plotting
         ## Format for each index in the list: (sequence, off-target score, off-target organism, distance, gene, location, PAM, strand, on-target score
