@@ -263,8 +263,7 @@ class MyMainWindow(QtWidgets.QMainWindow):
                 split_1 = x.replace("\n","")
                 split_1 = split_1.replace(" ","")
                 split_1 = split_1.split(":") # split_1[0] holds sequence, split_1[1] holds average OT score
-                if split_1[1] != "0.000000":
-                    self.crRNA_dict[str(split_1[0])][1] = split_1[1]
+                self.crRNA_dict[str(split_1[0])][1] = split_1[1]
             else:
                 split_2 = x.replace("\n","")
                 split_2 = split_2.split(",") # split_2[0] holds off-target score, split_2[1] holds index in index_file
