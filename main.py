@@ -310,7 +310,16 @@ class MyMainWindow(QtWidgets.QMainWindow):
             self.crRNA_table.setItem(index, 2, avg_off)
         self.crRNA_table.resizeColumnsToContents()
         
-        print(self.output)
+    
+        with open('./test_files/example_plottable.csv', 'r') as f:
+    
+            count = 0
+            for x in f:
+                if count > 0:
+                    line = x.replace('\n', '')
+                    arr = line.split(',')
+                    self.output.append(arr)
+                count += 1
 
         markers = ['.', 'o', 'v', '^', '<', '>', '1', '2', '3', '4']
         
@@ -320,7 +329,7 @@ class MyMainWindow(QtWidgets.QMainWindow):
             if row[2] != '':
                 if not row[2] in organismList:
                     organismList[row[2]] = []
-                organismList[row[2]].append(row[1], row[3])
+                organismList[row[2]].append((row[1], row[3]))
             
 
         fig, axs = plt.subplots()
@@ -333,13 +342,14 @@ class MyMainWindow(QtWidgets.QMainWindow):
                 x_vals.append(float(organismList[key][i][0]))
                 y_vals.append(float(organismList[key][i][1]))
 
-            scatter = axs.scatter(x_vals, y_vals, s = 80, label = key, marker=markers[count])
+            scatter = axs.scatter(x_vals, y_vals, s = 30, label = key, marker=markers[count])
 
             count += 1
 
         # produce a legend with the unique colors from the scatter
+        fig.set_size_inches(3, 3, forward=True)
         legend1 = axs.legend(loc="upper right", title="Off Target Organism")
-        legend1 = axs.legend( prop={'size': 6})
+        legend1 = axs.legend( prop={'size': 4})
         axs.set_ylabel('Organism Distance')
         axs.set_xlabel('Off-Target Score')
         axs.set_title('gRNA selection')
