@@ -310,15 +310,15 @@ class MyMainWindow(QtWidgets.QMainWindow):
         self.crRNA_table.resizeColumnsToContents()
         
     
-       #with open('./test_files/example_plottable.csv', 'r') as f:
+        #with open('./test_files/example_plottable.csv', 'r') as f:
     
-       #     count = 0
-       #     for x in f:
-       #         if count > 0:
-       #             line = x.replace('\n', '')
-       #             arr = line.split(',')
-       #             self.output.append(arr)
-       #         count += 1
+            #count = 0
+            #for x in f:
+                #if count > 0:
+                    #line = x.replace('\n', '')
+                    #arr = line.split(',')
+                    #self.output.append(arr)
+                #count += 1
 
         markers = ['.', 'o', 'v', '^', '<', '>', '1', '2', '3', '4']
         
@@ -346,9 +346,9 @@ class MyMainWindow(QtWidgets.QMainWindow):
             count += 1
 
         # produce a legend with the unique colors from the scatter
-        fig.set_size_inches(3, 3, forward=True)
+        fig.set_size_inches(2, 2, forward=True)
         legend1 = axs.legend(loc="upper right", title="Off Target Organism")
-        legend1 = axs.legend( prop={'size': 4})
+        legend1 = axs.legend( prop={'size': 2})
         axs.set_ylabel('Organism Distance')
         axs.set_xlabel('Off-Target Score')
         axs.set_title('gRNA selection')
