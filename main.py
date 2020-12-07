@@ -310,15 +310,15 @@ class MyMainWindow(QtWidgets.QMainWindow):
         self.crRNA_table.resizeColumnsToContents()
         
     
-        with open('./test_files/example_plottable.csv', 'r') as f:
+       #with open('./test_files/example_plottable.csv', 'r') as f:
     
-            count = 0
-            for x in f:
-                if count > 0:
-                    line = x.replace('\n', '')
-                    arr = line.split(',')
-                    self.output.append(arr)
-                count += 1
+       #     count = 0
+       #     for x in f:
+       #         if count > 0:
+       #             line = x.replace('\n', '')
+       #             arr = line.split(',')
+       #             self.output.append(arr)
+       #         count += 1
 
         markers = ['.', 'o', 'v', '^', '<', '>', '1', '2', '3', '4']
         
